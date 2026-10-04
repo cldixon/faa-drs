@@ -261,6 +261,16 @@ def validate(model: type[M], data: Any) -> M:
         ) from exc
 
 
+def add_field_hint(error: BadRequestError, query: Query) -> None:
+    """Name the filter fields that the catalog does not have. The API error does not."""
+    if query.unknown_fields:
+        error.message += (
+            f" These filter fields are not in the catalog for {query.doctype}: "
+            f"{', '.join(query.unknown_fields)}."
+        )
+        error.args = (error.message,)
+
+
 def parse_page(response: httpx.Response) -> Page:
     return validate(Page, parse_json(response))
 

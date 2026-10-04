@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import difflib
+import warnings
 from collections.abc import Iterable, Mapping
 from datetime import UTC, date, datetime
 from typing import Any, TypeAlias
@@ -9,7 +10,7 @@ from urllib.parse import quote
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator
 
 from faa_drs import catalog
-from faa_drs._exceptions import InvalidQueryError
+from faa_drs._exceptions import InvalidQueryError, UnknownFieldWarning
 from faa_drs._models import SortOrder
 
 MAX_FILTERS = 5
@@ -31,6 +32,8 @@ class Query(BaseModel):
     modified_after: datetime | None = None
     sort: SortOrder | None = None
     filters: dict[str, list[str]] = Field(default_factory=dict)
+    unknown_fields: tuple[str, ...] = ()
+    """Filter fields that are not in the catalog for the document type."""
 
     @field_validator("doctype", mode="before")
     @classmethod
@@ -106,7 +109,7 @@ def build_query(
 ) -> Query:
     doctype = str(doctype).strip() if doctype is not None else ""
     info = catalog.find_doctype(doctype)
-    normalized = _normalize_filters(filters or {}, info)
+    normalized, unknown = _normalize_filters(filters or {}, info)
     words = _strings([keywords] if isinstance(keywords, str) else keywords or [], KEYWORD_FILTER)
     if words:
         normalized[KEYWORD_FILTER] = _dedupe(normalized.get(KEYWORD_FILTER, []) + words)
@@ -128,20 +131,32 @@ def build_query(
             modified_after=modified_after,  # type: ignore[arg-type]
             sort=sort,  # type: ignore[arg-type]
             filters=normalized,
+            unknown_fields=unknown,
         )
     except ValidationError as exc:
         raise InvalidQueryError(_first_error(exc)) from exc
 
 
-def _normalize_filters(filters: Filters, info: catalog.DocTypeInfo | None) -> dict[str, list[str]]:
+def _normalize_filters(
+    filters: Filters, info: catalog.DocTypeInfo | None
+) -> tuple[dict[str, list[str]], tuple[str, ...]]:
+    """Return the normalized filters and the fields that the catalog does not have."""
     result: dict[str, list[str]] = {}
-    for key, value in filters.items():
+    unknown: list[str] = []
+    for key, raw in filters.items():
+        # Read a generator once.
+        value = (
+            list(raw) if isinstance(raw, Iterable) and not isinstance(raw, (str, Mapping)) else raw
+        )
         field = None
         if info is not None and key != KEYWORD_FILTER:
             field = info.fields.get(key)
             if field is None:
-                raise InvalidQueryError(_unknown_field_message(key, info))
-        if field is not None and field.type is catalog.FieldType.DATE:
+                unknown.append(key)
+                warnings.warn(_unknown_field_message(key, info), UnknownFieldWarning, stacklevel=4)
+        if (field is not None and field.type is catalog.FieldType.DATE) or (
+            field is None and _looks_like_date_range(value)
+        ):
             values = _date_range(key, value)
         else:
             if isinstance(value, (date, datetime)):
@@ -149,7 +164,12 @@ def _normalize_filters(filters: Filters, info: catalog.DocTypeInfo | None) -> di
             values = _strings([value] if isinstance(value, str) else value, key)
         if values:
             result[key] = values
-    return result
+    return result, tuple(unknown)
+
+
+def _looks_like_date_range(value: Any) -> bool:
+    """True for a pair that holds a `date`, for a field whose type the catalog does not know."""
+    return isinstance(value, list) and any(isinstance(item, date) for item in value)
 
 
 def _strings(values: Any, key: str) -> list[str]:
@@ -201,7 +221,10 @@ def _dedupe(values: list[str]) -> list[str]:
 
 
 def _unknown_field_message(key: str, info: catalog.DocTypeInfo) -> str:
-    message = f"{key!r} is not a filterable field for document type {info.code!r}."
+    message = (
+        f"{key!r} is not in the catalog for document type {info.code!r}. The filter is sent "
+        "anyway. The API rejects fields that it does not know."
+    )
     close = difflib.get_close_matches(key, list(info.fields), n=3, cutoff=0.6)
     if close:
         message += f" Did you mean: {', '.join(close)}?"

@@ -7,7 +7,7 @@ import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
-from faa_drs import DocType, InvalidQueryError, SortOrder
+from faa_drs import DocType, InvalidQueryError, SortOrder, UnknownFieldWarning
 from faa_drs._query import build_query
 
 
@@ -90,9 +90,31 @@ def test_date_filter_errors(value: Any, message: str) -> None:
         build_query("PMA", filters={"drs:pmaSupDate": value})
 
 
-def test_unknown_filter_suggests_close_match() -> None:
-    with pytest.raises(InvalidQueryError, match="Did you mean: drs:saibIssueDate"):
-        build_query("SAIB", filters={"drs:saibIssuDate": "x"})
+def test_unknown_filter_warns_with_close_match_and_is_kept() -> None:
+    with pytest.warns(UnknownFieldWarning, match="Did you mean: drs:saibIssueDate") as record:
+        query = build_query("SAIB", filters={"drs:saibIssuDate": "x", "drs:status": "Current"})
+    assert len(record) == 1
+    assert query.filters == {"drs:saibIssuDate": ["x"], "drs:status": ["Current"]}
+    assert query.unknown_fields == ("drs:saibIssuDate",)
+
+
+def test_known_fields_do_not_warn() -> None:
+    assert build_query("SAIB", filters={"drs:status": "Current"}, keywords="x").unknown_fields == ()
+
+
+def test_unknown_field_accepts_a_date_pair() -> None:
+    with pytest.warns(UnknownFieldWarning):
+        query = build_query("SAIB", filters={"drs:newDate": (date(2020, 1, 1), "2020-12-31")})
+    assert query.filters == {"drs:newDate": ["2020-01-01", "2020-12-31"]}
+    pair = (datetime(2020, 1, 1, tzinfo=UTC), date(2021, 1, 1))
+    assert build_query("NEW_TYPE", filters={"d": pair}).filters == {
+        "d": ["2020-01-01", "2021-01-01"]
+    }
+
+
+def test_generator_values_are_read_once() -> None:
+    query = build_query("SAIB", filters={"drs:status": (s for s in ["Current", "Historical"])})
+    assert query.filters == {"drs:status": ["Current", "Historical"]}
 
 
 def test_unknown_doctype_skips_local_field_validation() -> None:
@@ -168,7 +190,7 @@ def _any(value: Any) -> Any:
 
 
 def test_doctype_is_stripped_before_catalog_lookup() -> None:
-    with pytest.raises(InvalidQueryError, match="not a filterable field"):
+    with pytest.warns(UnknownFieldWarning, match="catalog for document type 'SAIB'"):
         build_query("  SAIB ", filters={"drs:nope": "x"})
     assert build_query(" SAIB ").request_args()[1] == "/SAIB"
 

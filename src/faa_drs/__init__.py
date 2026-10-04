@@ -19,6 +19,7 @@ from faa_drs._exceptions import (
     RestrictedDocTypeError,
     ServerError,
     UnknownDocTypeError,
+    UnknownFieldWarning,
 )
 from faa_drs._models import Attachment, Document, Page, SortOrder
 
@@ -46,6 +47,7 @@ __all__ = [
     "ServerError",
     "SortOrder",
     "UnknownDocTypeError",
+    "UnknownFieldWarning",
     "__version__",
     "catalog",
 ]

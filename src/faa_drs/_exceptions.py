@@ -19,11 +19,20 @@ __all__ = [
     "RestrictedDocTypeError",
     "ServerError",
     "UnknownDocTypeError",
+    "UnknownFieldWarning",
 ]
 
 
 class DRSError(Exception):
     """Base class for all errors raised by this package."""
+
+
+class UnknownFieldWarning(UserWarning):
+    """A filter field is not in the catalog for its document type.
+
+    The client sends the filter anyway, because the catalog can be behind the API. If the
+    API does not know the field either, the request fails with `BadRequestError`.
+    """
 
 
 class InvalidQueryError(DRSError, ValueError):

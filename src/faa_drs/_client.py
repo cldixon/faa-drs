@@ -16,6 +16,7 @@ from faa_drs._base import (
     MAX_REDIRECTS,
     FileSource,
     Settings,
+    add_field_hint,
     check_status,
     download_target,
     is_retryable,
@@ -28,7 +29,7 @@ from faa_drs._base import (
     retry_after,
     too_many_redirects,
 )
-from faa_drs._exceptions import APIError, DRSConnectionError
+from faa_drs._exceptions import APIError, BadRequestError, DRSConnectionError
 from faa_drs._models import Attachment, Document, Page, SortOrder
 from faa_drs._query import DateLike, Filters, Query, build_query
 
@@ -239,7 +240,11 @@ class DRSClient:
         return self._call(self._settings.download_request(file_id), write, stream=True)
 
     def _list(self, query: Query) -> Page:
-        return self._call(self._settings.list_request(query), parse_page)
+        try:
+            return self._call(self._settings.list_request(query), parse_page)
+        except BadRequestError as exc:
+            add_field_hint(exc, query)
+            raise
 
     def _call(
         self,

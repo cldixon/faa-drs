@@ -10,13 +10,15 @@ All errors are subclasses of `DRSError`.
 | `AuthenticationError` | HTTP 401 or 403. The API key is missing, not valid or expired. |
 | `UnknownDocTypeError` | The document type is not in DRS. |
 | `RestrictedDocTypeError` | The document type is internal only. External keys cannot read it. |
-| `BadRequestError` | HTTP 400. Usually a filter that is not valid. |
+| `BadRequestError` | HTTP 400. Usually a filter that is not valid. The message names filter fields that are not in the catalog. |
 | `NotFoundError` | HTTP 404. Usually a file that does not exist. |
 | `RateLimitError` | HTTP 429. |
 | `ServerError` | HTTP 5xx, or a DRS system error. |
 | `DRSConnectionError` | The client cannot connect to DRS. |
 | `DRSTimeoutError` | The request took too long. A subclass of `DRSConnectionError`. |
 | `ResponseValidationError` | The response does not have the expected shape. |
+
+`UnknownFieldWarning` is a warning, not an error. The client gives it for a filter field that is not in the catalog, and sends the filter anyway. See [Filters](filters.md#find-field-names).
 
 Errors from the API are `APIError` subclasses. They have `status_code`, `message` and `response` attributes. You can pickle them, for example to send them from a worker process. A pickled error does not keep `response`.
 

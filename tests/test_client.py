@@ -25,6 +25,7 @@ from faa_drs import (
     RestrictedDocTypeError,
     ServerError,
     UnknownDocTypeError,
+    UnknownFieldWarning,
 )
 from tests.fake_drs import API_KEY, BASE_URL, FakeDRS, make_doc
 
@@ -62,8 +63,37 @@ def test_filters_use_filtered_endpoint(client: DRSClient, fake: FakeDRS) -> None
 
 def test_invalid_query_sends_no_request(client: DRSClient, fake: FakeDRS) -> None:
     with pytest.raises(InvalidQueryError):
-        client.list_documents("SAIB", filters={"drs:nope": "x"})
+        client.list_documents("SAIB", filters={"drs:saibIssueDate": "2020-01-01"})
     assert fake.requests == []
+
+
+def test_field_missing_from_catalog_is_sent_with_a_warning(
+    client: DRSClient, fake: FakeDRS
+) -> None:
+    fake.documents["SAIB"][0]["drs:newField"] = "yes"
+    with pytest.warns(UnknownFieldWarning, match="'drs:newField' is not in the catalog"):
+        page = client.list_documents("SAIB", filters={"drs:newField": "yes"})
+    assert json.loads(fake.requests[-1].content)["documentFilters"] == {"drs:newField": ["yes"]}
+    assert [d["drs:newField"] for d in page.documents] == ["yes"]
+
+
+def test_rejected_unknown_field_is_named_in_the_error(client: DRSClient, fake: FakeDRS) -> None:
+    fake.fail_next(httpx.Response(400, json={"errorMessage": "One or more filters are invalid."}))
+    with (
+        pytest.warns(UnknownFieldWarning, match="Did you mean: drs:saibIssueDate"),
+        pytest.raises(
+            BadRequestError, match="not in the catalog for SAIB: drs:saibIssuDate"
+        ) as info,
+    ):
+        client.list_documents("SAIB", filters={"drs:saibIssuDate": ("2020-01-01", "2020-12-31")})
+    assert "drs:saibIssuDate" in str(info.value.args[0])
+
+
+def test_bad_request_without_unknown_fields_is_unchanged(client: DRSClient, fake: FakeDRS) -> None:
+    fake.fail_next(httpx.Response(400, json={"errorMessage": "One or more filters are invalid."}))
+    with pytest.raises(BadRequestError) as info:
+        client.list_documents("SAIB", filters={"drs:status": "Current"})
+    assert info.value.message == "One or more filters are invalid."
 
 
 def test_iter_pages_walks_all_offsets(client: DRSClient, fake: FakeDRS) -> None:

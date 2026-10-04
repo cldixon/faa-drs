@@ -16,6 +16,7 @@ from faa_drs._base import (
     MAX_REDIRECTS,
     FileSource,
     Settings,
+    add_field_hint,
     check_status,
     download_target,
     is_retryable,
@@ -28,7 +29,7 @@ from faa_drs._base import (
     retry_after,
     too_many_redirects,
 )
-from faa_drs._exceptions import APIError, DRSConnectionError
+from faa_drs._exceptions import APIError, BadRequestError, DRSConnectionError
 from faa_drs._models import Attachment, Document, Page, SortOrder
 from faa_drs._query import DateLike, Filters, Query, build_query
 
@@ -201,7 +202,11 @@ class AsyncDRSClient:
         async def parse(response: httpx.Response) -> Page:
             return parse_page(response)
 
-        return await self._call(self._settings.list_request(query), parse)
+        try:
+            return await self._call(self._settings.list_request(query), parse)
+        except BadRequestError as exc:
+            add_field_hint(exc, query)
+            raise
 
     async def _call(
         self,
