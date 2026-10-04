@@ -4,6 +4,8 @@ from datetime import UTC, date, datetime, timedelta, timezone
 from typing import Any
 
 import pytest
+from hypothesis import given
+from hypothesis import strategies as st
 
 from faa_drs import DocType, InvalidQueryError, SortOrder
 from faa_drs._query import build_query
@@ -137,6 +139,10 @@ def test_max_ten_values_per_filter() -> None:
         ({"offset": -1}, "offset"),
         ({"sort": "sideways"}, "sort"),
         ({"modified_after": "yesterday"}, "modified_after"),
+        (
+            {"modified_after": datetime(1, 1, 1, tzinfo=timezone(timedelta(hours=5)))},
+            "out of range",
+        ),
     ],
 )
 def test_invalid_arguments(kwargs: dict, message: str) -> None:
@@ -159,3 +165,52 @@ def test_invalid_query_error_is_value_error() -> None:
 
 def _any(value: Any) -> Any:
     return value
+
+
+def test_doctype_is_stripped_before_catalog_lookup() -> None:
+    with pytest.raises(InvalidQueryError, match="not a filterable field"):
+        build_query("  SAIB ", filters={"drs:nope": "x"})
+    assert build_query(" SAIB ").request_args()[1] == "/SAIB"
+
+
+@pytest.mark.parametrize("doctype", ["", "   ", None])
+def test_empty_doctype_is_rejected(doctype: Any) -> None:
+    with pytest.raises(InvalidQueryError, match="doctype"):
+        build_query(doctype)
+
+
+@given(
+    st.dictionaries(
+        st.sampled_from(["drs:status", "drs:saibMake", "drs:saibModel"]),
+        st.lists(st.one_of(st.none(), st.text(max_size=8)), max_size=12),
+    )
+)
+def test_normalized_filters_are_clean(filters: dict[str, list[str | None]]) -> None:
+    cleaned = {
+        k: list(dict.fromkeys(v.strip() for v in vs if v and v.strip()))
+        for k, vs in filters.items()
+    }
+    if any(len(values) > 10 for values in cleaned.values()):
+        with pytest.raises(InvalidQueryError, match="at most 10"):
+            build_query("SAIB", filters=_any(filters))
+        return
+    query = build_query("SAIB", filters=_any(filters))
+    assert query.filters == {k: v for k, v in cleaned.items() if v}
+
+
+_LOW, _HIGH = datetime(2, 1, 1), datetime(9998, 12, 31)  # noqa: DTZ001
+
+
+@given(
+    st.one_of(
+        st.datetimes(_LOW, _HIGH),
+        st.datetimes(_LOW, _HIGH, timezones=st.timezones()),
+    )
+)
+def test_modified_after_param_round_trips_to_the_millisecond(value: datetime) -> None:
+    param = build_query("AC", modified_after=value).modified_after_param
+    assert param is not None
+    assert param.endswith("Z")
+    parsed = datetime.fromisoformat(param)
+    expected = value.replace(tzinfo=UTC) if value.tzinfo is None else value.astimezone(UTC)
+    assert parsed == expected.replace(microsecond=expected.microsecond // 1000 * 1000)

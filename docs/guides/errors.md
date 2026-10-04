@@ -7,7 +7,7 @@ All errors are subclasses of `DRSError`.
 | Error | Cause |
 | --- | --- |
 | `InvalidQueryError` | The query is not valid. The client did not send a request. Also a `ValueError`. |
-| `AuthenticationError` | HTTP 403. The API key is missing, not valid or expired. |
+| `AuthenticationError` | HTTP 401 or 403. The API key is missing, not valid or expired. |
 | `UnknownDocTypeError` | The document type is not in DRS. |
 | `RestrictedDocTypeError` | The document type is internal only. External keys cannot read it. |
 | `BadRequestError` | HTTP 400. Usually a filter that is not valid. |
@@ -17,6 +17,8 @@ All errors are subclasses of `DRSError`.
 | `DRSConnectionError` | The client cannot connect to DRS. |
 | `DRSTimeoutError` | The request took too long. A subclass of `DRSConnectionError`. |
 | `ResponseValidationError` | The response does not have the expected shape. |
+
+Errors from the API are `APIError` subclasses. They have `status_code`, `message` and `response` attributes. You can pickle them, for example to send them from a worker process. A pickled error does not keep `response`.
 
 `APIError` is the base class for errors from the API. It has these attributes:
 
@@ -46,7 +48,7 @@ The client retries these errors:
 - `RateLimitError`
 - `ServerError`
 
-The client waits longer before each retry. If the response has a `Retry-After` header, the client waits for that time.
+The client waits longer before each retry. If the response has a `Retry-After` header, the client waits for that time, to a maximum of 30 seconds. The header can be a number of seconds or a date.
 
 Set the number of retries with `max_retries`. The default is 3. Set it to 0 to stop retries.
 

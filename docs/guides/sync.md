@@ -27,7 +27,8 @@ def sync(drs: DRSClient, store, checkpoint=None):
 
 - `modified_after` returns documents that changed **after** the time. It does not include the time.
 - `modified_after` does not return documents that have no `last_modified` value. A full read gets these documents.
-- `iter_documents` sorts oldest change first. If the read stops, you can continue from the last `last_modified` value that you saved.
+- If a read stops, continue from the last completed page offset. See [Resume a read](documents.md#resume-a-read). Do not continue from the last `last_modified` value: `modified_after` does not include that time, so you can skip documents that have the same value.
+- A long read can skip documents if DRS updates during the read. See [Sort order](documents.md#sort-order).
 - DRS updates every 24 hours. Do not sync more frequently than this.
 
 !!! warning

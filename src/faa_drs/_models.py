@@ -56,6 +56,18 @@ class Attachment(_Model):
         return file_id_from_url(self.download_url)
 
 
+_DOCUMENT_KEYS = _COMMON_KEYS | {
+    "doctype",
+    "guid",
+    "url",
+    "last_modified",
+    "download_url",
+    "file_name",
+    "has_attachments",
+    "attachments_url",
+}
+
+
 class Document(_Model):
     """One DRS document.
 
@@ -79,9 +91,12 @@ class Document(_Model):
     def _split_metadata(cls, data: Any) -> Any:
         if not isinstance(data, dict) or "metadata" in data:
             return data
-        common = {k: v for k, v in data.items() if k in _COMMON_KEYS or k == "doctype"}
+        common = {k: v for k, v in data.items() if k in _DOCUMENT_KEYS}
         common["metadata"] = {k: _normalize(v) for k, v in data.items() if k not in common}
         return common
+
+    def __hash__(self) -> int:
+        return hash((self.doctype, self.guid))
 
     def __getitem__(self, key: str) -> JsonValue:
         return self.metadata[key]
@@ -176,8 +191,11 @@ class Page(_Model):
 
     @field_validator("sort_order", mode="before")
     @classmethod
-    def _upper(cls, value: Any) -> Any:
-        return value.upper() if isinstance(value, str) else value
+    def _sort_order(cls, value: Any) -> Any:
+        # Informational only. An unknown value must not fail the whole page.
+        if isinstance(value, str) and value.upper() in SortOrder.__members__:
+            return value.upper()
+        return None
 
     @property
     def next_offset(self) -> int | None:

@@ -17,7 +17,7 @@ from faa_drs._base import (
     FileSource,
     Settings,
     check_status,
-    default_file_name,
+    download_target,
     is_retryable,
     log_retry,
     map_transport_error,
@@ -26,6 +26,7 @@ from faa_drs._base import (
     redirect_request,
     resolve_file_id,
     retry_after,
+    too_many_redirects,
 )
 from faa_drs._exceptions import APIError, DRSConnectionError
 from faa_drs._models import Attachment, Document, Page, SortOrder
@@ -181,15 +182,12 @@ class AsyncDRSClient:
     async def download_to(self, source: FileSource, dest: str | os.PathLike[str]) -> Path:
         """Stream a file to disk and return its path. See `DRSClient.download_to`."""
         file_id = resolve_file_id(source)
-        dest = Path(dest)
 
         async def write(response: httpx.Response) -> Path:
             check_status(response)
-            target = dest / default_file_name(source, response, file_id) if dest.is_dir() else dest
-            target.parent.mkdir(parents=True, exist_ok=True)
-            part = target.with_name(f".{target.name}.part")
+            target, part = download_target(dest, source, response, file_id)
             try:
-                async with await anyio.open_file(part, "wb") as fh:
+                async with await anyio.open_file(part, "xb") as fh:
                     async for chunk in response.aiter_bytes(_CHUNK):
                         await fh.write(chunk)
                 part.replace(target)
@@ -244,4 +242,7 @@ class AsyncDRSClient:
             await response.aclose()
             request = redirect_request(self._settings, response)
             response = await self._client.send(request, stream=stream, follow_redirects=False)
-        return response
+        if not response.has_redirect_location:
+            return response
+        await response.aclose()
+        raise too_many_redirects(response)

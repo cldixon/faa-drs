@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
     import httpx
@@ -61,6 +61,14 @@ class APIError(DRSError):
 
     def __str__(self) -> str:
         return f"[{self.status_code}] {self.message}"
+
+    def __reduce__(self) -> tuple[Any, ...]:
+        # The response is not kept, so errors can cross process boundaries.
+        return _rebuild, (type(self), self.message, self.status_code)
+
+
+def _rebuild(cls: type[APIError], message: str, status_code: int) -> APIError:
+    return cls(message, status_code=status_code)
 
 
 class BadRequestError(APIError):

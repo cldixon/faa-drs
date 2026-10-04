@@ -56,7 +56,12 @@ class Query(BaseModel):
     def _utc(cls, value: datetime | None) -> datetime | None:
         if value is None:
             return None
-        return value.replace(tzinfo=UTC) if value.tzinfo is None else value.astimezone(UTC)
+        if value.tzinfo is None:
+            return value.replace(tzinfo=UTC)
+        try:
+            return value.astimezone(UTC)
+        except OverflowError as exc:
+            raise ValueError("datetime is out of range in UTC") from exc
 
     @property
     def is_filtered(self) -> bool:
@@ -66,9 +71,8 @@ class Query(BaseModel):
     def modified_after_param(self) -> str | None:
         if self.modified_after is None:
             return None
-        return self.modified_after.strftime("%Y-%m-%dT%H:%M:%S.") + (
-            f"{self.modified_after.microsecond // 1000:03d}Z"
-        )
+        stamp = self.modified_after.replace(tzinfo=None).isoformat(timespec="milliseconds")
+        return stamp + "Z"
 
     def with_offset(self, offset: int) -> Query:
         return self.model_copy(update={"offset": offset})
@@ -100,7 +104,8 @@ def build_query(
     filters: Filters | None = None,
     keywords: Iterable[str] | str | None = None,
 ) -> Query:
-    info = catalog.find_doctype(str(doctype))
+    doctype = str(doctype).strip() if doctype is not None else ""
+    info = catalog.find_doctype(doctype)
     normalized = _normalize_filters(filters or {}, info)
     words = _strings([keywords] if isinstance(keywords, str) else keywords or [], KEYWORD_FILTER)
     if words:
