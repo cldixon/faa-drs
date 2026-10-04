@@ -43,17 +43,17 @@ The API can sort by last-modified date only.
 | `sort` | Order |
 | --- | --- |
 | `"ASC"` | Oldest change first. Documents with no date come first. |
-| `"DESC"` | Newest change first. |
+| `"DESC"` | Newest change first. Documents with no date come last. |
 | `None` | The default order of the document type. |
 
-`list_documents` uses `None` by default. `iter_documents` and `iter_pages` use `"ASC"` by default.
+`list_documents` uses `None` by default. `iter_documents` and `iter_pages` use `"DESC"` by default.
 
 Paging uses offsets. If DRS changes documents during a long read, the positions move:
 
 - With `"ASC"`, a changed document moves to the end, and the read gets it again. But if the read already got that document, each later document moves back one position, and the read can skip a document that did not change.
 - With `"DESC"`, a changed document moves to the start. The read can get a document twice. It does not skip a document that did not change. It can miss the changed document, but a later read with `modified_after` gets it.
 
-DRS updates once every 24 hours, so this occurs only if a read continues across an update. To be safe, replace documents by `guid` and do a full read again from time to time. See [Sync updates](sync.md).
+This is why `iter_documents` and `iter_pages` use `"DESC"`. DRS updates once every 24 hours, so this occurs only if a read continues across an update. Replace documents by `guid`, because a read can get a document twice. See [Sync updates](sync.md).
 
 To use the order of the DRS web application, set `sort=None`.
 

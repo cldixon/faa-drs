@@ -109,7 +109,7 @@ class AsyncDRSClient:
         *,
         offset: int = 0,
         modified_after: DateLike | None = None,
-        sort: SortOrder | str | None = SortOrder.ASC,
+        sort: SortOrder | str | None = SortOrder.DESC,
         filters: Filters | None = None,
         keywords: Iterable[str] | str | None = None,
     ) -> AsyncIterator[Page]:
@@ -135,7 +135,7 @@ class AsyncDRSClient:
         *,
         offset: int = 0,
         modified_after: DateLike | None = None,
-        sort: SortOrder | str | None = SortOrder.ASC,
+        sort: SortOrder | str | None = SortOrder.DESC,
         filters: Filters | None = None,
         keywords: Iterable[str] | str | None = None,
         limit: int | None = None,

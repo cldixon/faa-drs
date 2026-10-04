@@ -70,16 +70,26 @@ def test_iter_pages_walks_all_offsets(client: DRSClient, fake: FakeDRS) -> None:
     pages = list(client.iter_pages("BULK"))
     assert [p.offset for p in pages] == [0, 10, 20]
     assert [r.url.params["offset"] for r in fake.requests] == ["0", "10", "20"]
-    assert all(r.url.params["docLastModifiedDateSortOrder"] == "ASC" for r in fake.requests)
+    assert all(r.url.params["docLastModifiedDateSortOrder"] == "DESC" for r in fake.requests)
 
 
-def test_iter_documents_sorts_oldest_first_by_default(client: DRSClient) -> None:
+def test_iter_documents_sorts_newest_first_by_default(client: DRSClient) -> None:
     docs = list(client.iter_documents("BULK"))
     assert len(docs) == 25
     assert len({d.guid for d in docs}) == 25
     stamps = [d.last_modified for d in docs if d.last_modified]
     assert len(stamps) == 25
-    assert stamps == sorted(stamps)
+    assert stamps == sorted(stamps, reverse=True)
+
+
+def test_desc_puts_documents_without_a_date_last(client: DRSClient, fake: FakeDRS) -> None:
+    fake.documents["MIXED"] = [
+        make_doc(i, modified=None if i % 2 else f"2024-01-0{i + 1}T00:00:00.000Z") for i in range(6)
+    ]
+    fake.page_size = 4
+    dates = [d.last_modified for d in client.iter_documents("MIXED")]
+    assert dates[3:] == [None, None, None]
+    assert all(dates[:3])
 
 
 def test_iter_documents_api_default_order(client: DRSClient, fake: FakeDRS) -> None:

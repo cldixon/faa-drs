@@ -2,7 +2,8 @@
 
 Reproduces the observed behavior of the real API, including its quirks:
 errors in HTTP 200 bodies, 403 with an empty body, fixed page size, strict
-`docLastModifiedDate` comparison and nulls first on ascending sort.
+`docLastModifiedDate` comparison, and documents with a null date first on
+ascending sort and last on descending sort.
 """
 
 from __future__ import annotations

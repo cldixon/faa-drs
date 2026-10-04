@@ -127,15 +127,18 @@ class DRSClient:
         *,
         offset: int = 0,
         modified_after: DateLike | None = None,
-        sort: SortOrder | str | None = SortOrder.ASC,
+        sort: SortOrder | str | None = SortOrder.DESC,
         filters: Filters | None = None,
         keywords: Iterable[str] | str | None = None,
     ) -> Iterator[Page]:
         """Get all pages, one request per page.
 
-        The default sort is oldest-modified first. Use `sort=None` for the API default
-        order. Paging uses offsets, so if DRS updates during a long read, documents can
-        move between pages. See the sort order section of the documents guide.
+        The default sort is newest-modified first, and documents with no date come last.
+        Paging uses offsets. With this order, an update to DRS during a long read can
+        repeat a document but does not skip one that did not change. A document that
+        changes during the read can be missed, but it is newer than the first document,
+        so a later read with `modified_after` gets it. Use `sort=None` for the API
+        default order.
         """
         query = build_query(
             doctype,
@@ -158,7 +161,7 @@ class DRSClient:
         *,
         offset: int = 0,
         modified_after: DateLike | None = None,
-        sort: SortOrder | str | None = SortOrder.ASC,
+        sort: SortOrder | str | None = SortOrder.DESC,
         filters: Filters | None = None,
         keywords: Iterable[str] | str | None = None,
         limit: int | None = None,

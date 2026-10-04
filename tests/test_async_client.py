@@ -32,6 +32,7 @@ async def test_iter_documents(aclient: AsyncDRSClient, fake: FakeDRS) -> None:
     docs = [d async for d in aclient.iter_documents("BULK")]
     assert len({d.guid for d in docs}) == 25
     assert [r.url.params["offset"] for r in fake.requests] == ["0", "10", "20"]
+    assert {r.url.params["docLastModifiedDateSortOrder"] for r in fake.requests} == {"DESC"}
 
 
 async def test_iter_documents_limit(aclient: AsyncDRSClient, fake: FakeDRS) -> None:

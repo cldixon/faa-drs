@@ -120,3 +120,15 @@ async def test_async_client() -> None:
     async with AsyncDRSClient() as drs:
         docs = [d async for d in drs.iter_documents(DocType.ALERTS, limit=5)]
     assert len(docs) == 5
+
+
+def test_null_dates_sort_last_with_desc_and_first_with_asc(drs: DRSClient) -> None:
+    # The default DESC paging relies on this order. See spec/NOTES.md.
+    total = drs.list_documents(DocType.SAIB).total
+    newest = drs.list_documents(DocType.SAIB, sort="desc")
+    assert newest.documents[0].last_modified is not None
+    assert (
+        drs.list_documents(DocType.SAIB, sort="desc", offset=total - 1).documents[0].last_modified
+        is None
+    )
+    assert drs.list_documents(DocType.SAIB, sort="asc").documents[0].last_modified is None

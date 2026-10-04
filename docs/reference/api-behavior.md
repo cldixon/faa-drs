@@ -40,7 +40,8 @@ The base URL is `https://drs.faa.gov/api/drs/data-pull`. The API key goes in the
 
 - `docLastModifiedDate` returns documents that changed after the time. It does not include the time.
 - It does not return documents that have no change date.
-- With ascending sort, documents with no change date come first.
+- With ascending sort, documents with no change date come first. With descending sort, they come last.
+- Many documents can have the same change date. For example, 102 change dates in SAIB are shared by 2 to 11 documents.
 
 ## Filters
 
