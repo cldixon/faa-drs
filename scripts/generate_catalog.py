@@ -221,6 +221,7 @@ def format_python(text: str) -> str:
         input=text,
         capture_output=True,
         text=True,
+        encoding="utf-8",
         check=True,
         cwd=ROOT,
     )
@@ -235,14 +236,14 @@ def main() -> int:
         ENUM: format_python(render_enum(doctypes)),
         DOCS: render_docs(doctypes),
     }
-    stale = [p for p, text in outputs.items() if not p.exists() or p.read_text() != text]
+    stale = [p for p, text in outputs.items() if not p.exists() or p.read_text("utf-8") != text]
     if check:
         for path in stale:
             print(f"Stale: {path.relative_to(ROOT)}")
         return 1 if stale else 0
     for path in stale:
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(text := outputs[path])
+        path.write_text(text := outputs[path], encoding="utf-8", newline="\n")
         print(f"Wrote {path.relative_to(ROOT)} ({len(text):,} bytes)")
     return 0
 

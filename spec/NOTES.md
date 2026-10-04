@@ -111,15 +111,28 @@ curated map of the "content fields" for each doctype.
 - Each doctype has exactly one "default sort" field.
 - The CSV header has typos and trailing spaces: `Deafult  Sort By`, `Document Type name in DRS `, `Metadata Name in API Response `.
 - The doctype codes are not all valid Python identifiers (e.g. `ORDER_8900.1`, `AFS-1_MEMORANDUMS`, `8900.1_SUMMARY_OF_CHANGES`).
-- Some doctypes may be internal-only for external keys. This hasn't been tested yet; we need to sweep all 105.
 
-Sizes seen so far: SAIB 1,338; AC 1,686; ALERTS 109; ORDER_8900.1 5,092; FAR 12,776; ADFRAWD 20,168.
 Latency is about 1.5–3 s per page; FAR took about 9 s.
 
-## Open questions / to verify
+## Findings from the full sweep (2026-10-04)
 
-- [ ] Sweep all 105 doctypes and record which return `internal only` for our key.
-- [ ] Check whether paging with the default sort is stable over large offsets. If not, use `ASC` by last-modified date when doing a bulk pull.
-- [ ] Check whether `docLastModifiedDate` is strictly "after", and how it combines with filters.
-- [ ] Learn how a doc's revisions/versions show up: is each revision a separate document with the same number?
-- [ ] Find out if there is any rate limiting. Neither the headers nor the docs mention any.
+- **26 of 105 doctypes are internal only** for an external key (all ICAO, AOV, most `OTHER_*` and JTA types).
+  This list is recorded in `scripts/generate_catalog.py`.
+- The 79 readable types hold about 1.86M documents. **PMA alone has 1.64M**, then STC (83k), EXEMPTION (37k) and ADFRAWD (20k).
+  `CANIC` and `FIRE_TEST_HANDBOOK_REVISION3` are currently empty.
+- `documentGuid` is the only common field that is always present.
+  - `docLastModifiedDate` is **null** for many documents in 24 types (e.g. 585 of 1,338 SAIBs).
+  - PMA and TSOI documents have no file fields at all.
+- **Inline full text** is returned for these doctypes, in their Summary / SupplementaryInfo / RegulatoryText / SCInfoText / SectionRule fields:
+  ADFRAWD, ADNPRM, CFRFRSFAR, FAR, NPRM, SCFINAL, SCPROPOSED and SFAR.
+  - The largest single field seen is about 775 KB (NPRM regulatory text).
+  - `drs:nprmSupplementaryInfo` is an array, not a string.
+- About 25 CSV field types are wrong compared with the live data (usually TEXT where the API returns ARRAY). FAR's types are blank in the CSV.
+  Five live fields (e.g. `fsims:docLevel2` on the ORDER_8x00 handbooks) are missing from the CSV.
+  The corrections are in `scripts/generate_catalog.py`.
+- **Paging is stable**: full crawls of SAIB, ORDERS and BULLETINS under ASC, DESC and the default sort each returned exactly
+  `totalItems` unique GUIDs.
+- With `docLastModifiedDateSortOrder=ASC`, documents with a null date come first.
+- `docLastModifiedDate` is **strictly after**, and it **excludes documents with a null date**
+  (SAIB with a cutoff of 1900-01-01 returns 753 of 1,338).
+- The `Keyword` filter returns documents that contain *any* of the given terms.

@@ -1,0 +1,92 @@
+[project]
+site_name = "faa-drs"
+site_url = "https://cldixon.github.io/faa-drs/"
+site_description = "Python SDK for the FAA Dynamic Regulatory System (DRS) API."
+repo_url = "https://github.com/cldixon/faa-drs"
+repo_name = "cldixon/faa-drs"
+edit_uri = "edit/main/docs/"
+copyright = "MIT License. Not affiliated with the FAA."
+nav = [
+  { "Home" = "index.md" },
+  { "Get started" = "get-started.md" },
+  { "Guides" = [
+    "guides/documents.md",
+    "guides/filters.md",
+    "guides/files.md",
+    "guides/sync.md",
+    "guides/async.md",
+    "guides/errors.md",
+  ] },
+  { "Reference" = [
+    "reference/api.md",
+    "reference/doctypes.md",
+    "reference/api-behavior.md",
+  ] },
+]
+
+[project.theme]
+language = "en"
+features = [
+  "content.code.copy",
+  "content.code.select",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.path",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.plugins.mkdocstrings.handlers.python]
+paths = ["src"]
+inventories = ["https://docs.python.org/3/objects.inv"]
+
+[project.plugins.mkdocstrings.handlers.python.options]
+docstring_style = "google"
+members_order = "source"
+show_root_heading = true
+show_root_full_path = false
+show_source = false
+show_signature_annotations = true
+separate_signature = true
+signature_crossrefs = true
+show_symbol_type_heading = true
+merge_init_into_class = true
+filters = ["!^_"]
+inherited_members = false
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences = {}
+pymdownx.tabbed.alternate_style = true

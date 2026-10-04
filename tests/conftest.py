@@ -17,7 +17,7 @@ FIXTURES = Path(__file__).parent / "fixtures"
 @pytest.fixture(scope="session")
 def real_docs() -> dict[str, list[dict]]:
     """Trimmed documents captured from the live API."""
-    return json.loads((FIXTURES / "documents.json").read_text())["documents"]
+    return json.loads((FIXTURES / "documents.json").read_text("utf-8"))["documents"]
 
 
 @pytest.fixture
