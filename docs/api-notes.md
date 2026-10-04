@@ -105,7 +105,7 @@ curated map of the "content fields" for each doctype.
 
 ## Document types (CSV)
 
-- 105 doctypes across 8 services: FS (65), AIR (32), AST (5), OTHER (4: ICAO), AOV (3), AGC (2), ANG (2), ARM (1).
+- 105 doctypes across 8 services: FS (57), AIR (31), AST (5), OTHER (4: ICAO), AOV (3), AGC (2), ANG (2), ARM (1).
 - 1,986 field rows. Types: ARRAY 1077, TEXT 659, DATE 191, **blank 60** (in FAR, AT_JTA, GA_JTA and
   OTHER_PROCEDURES_MANUAL, so these must be inferred).
 - Each doctype has exactly one "default sort" field.
