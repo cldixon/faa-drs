@@ -221,12 +221,16 @@ def test_normalized_filters_are_clean(filters: dict[str, list[str | None]]) -> N
 
 
 _LOW, _HIGH = datetime(2, 1, 1), datetime(9998, 12, 31)  # noqa: DTZ001
+# Fixed offsets, not st.timezones(): that needs the IANA database, which Windows lacks.
+_OFFSETS = st.builds(
+    timezone, st.timedeltas(min_value=timedelta(hours=-23), max_value=timedelta(hours=23))
+)
 
 
 @given(
     st.one_of(
         st.datetimes(_LOW, _HIGH),
-        st.datetimes(_LOW, _HIGH, timezones=st.timezones()),
+        st.datetimes(_LOW, _HIGH, timezones=_OFFSETS),
     )
 )
 def test_modified_after_param_round_trips_to_the_millisecond(value: datetime) -> None:
