@@ -1,0 +1,614 @@
+{
+ "documents": {
+  "SAIB": [
+   {
+    "drs:documentNumber": "2026-17",
+    "drs:status": "Current",
+    "drs:title": "VNAV Approach Disconnect Following Missed Approach, Anomaly on Airplanes with FMC U14.0/14.1",
+    "drs:revNum": "0",
+    "drs:productType": [
+     "Aircraft"
+    ],
+    "drs:productSubType": [
+     "Large Airplane"
+    ],
+    "drs:saibMake": [
+     "The Boeing Company"
+    ],
+    "drs:saibModel": [
+     "737-7",
+     "737-8",
+     "737-9",
+     "737-600 Series",
+     "737-700 Series",
+     "737-800 Series",
+     "737-900 Series",
+     "737-900ER Series"
+    ],
+    "drs:partNumber": [],
+    "drs:subPart": [],
+    "drs:sectionNumber": [],
+    "drs:saibIssueDate": "2026-10-03",
+    "drs:comments": null,
+    "drs:SFARReference": null,
+    "drs:CARReference": null,
+    "drs:ADReference": null,
+    "drs:ACReference": null,
+    "drs:documentOwner": [
+     "AIR-700: Compliance & Airworthiness Division"
+    ],
+    "drs:primaryRespOffice": [
+     "AIR-720: Operational Safety Branch"
+    ],
+    "docLastModifiedDate": "2026-10-03T15:51:09.866Z",
+    "documentGuid": "DRSDOCID141932822720261003154807",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID141932822720261003154807.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/8af6fa28-b0c6-49bf-939f-9f4b4b01f814",
+    "mainDocumentFileName": "2026-17.pdf",
+    "hasMoreAttachments": false
+   },
+   {
+    "drs:documentNumber": "2026-16",
+    "drs:status": "Current",
+    "drs:title": "Elevator Control System",
+    "drs:revNum": "0",
+    "drs:productType": [
+     "Aircraft"
+    ],
+    "drs:productSubType": [
+     "Small Airplane"
+    ],
+    "drs:saibMake": [
+     "Textron Aviation Inc."
+    ],
+    "drs:saibModel": [
+     "99",
+     "99A",
+     "99A (FACH)",
+     "A99",
+     "A99A",
+     "B99",
+     "C99",
+     "100"
+    ],
+    "drs:partNumber": [],
+    "drs:subPart": [],
+    "drs:sectionNumber": [],
+    "drs:saibIssueDate": "2026-09-10",
+    "drs:comments": null,
+    "drs:SFARReference": null,
+    "drs:CARReference": null,
+    "drs:ADReference": null,
+    "drs:ACReference": null,
+    "drs:documentOwner": [
+     "AIR-700: Compliance & Airworthiness Division"
+    ],
+    "drs:primaryRespOffice": [
+     "AIR-720: Operational Safety Branch"
+    ],
+    "docLastModifiedDate": "2026-09-10T14:27:12.202Z",
+    "documentGuid": "DRSDOCID152742662820260910142333",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID152742662820260910142333.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/b383a3a4-f815-4a2b-bd72-4fc5b53600e5",
+    "mainDocumentFileName": "2026-16.pdf",
+    "hasMoreAttachments": false
+   },
+   {
+    "drs:documentNumber": "CE-02-38R2",
+    "drs:status": "Current",
+    "drs:title": null,
+    "drs:revNum": "0",
+    "drs:productType": [
+     "Aircraft"
+    ],
+    "drs:productSubType": [
+     "Small Airplane"
+    ],
+    "drs:saibMake": [
+     "Raytheon Aircraft Company",
+     "Raytheon Aircraft Company",
+     "Raytheon Aircraft Company",
+     "Raytheon Aircraft Company"
+    ],
+    "drs:saibModel": [
+     "45 (YT-34)",
+     "A45 (T-34A",
+     "B-45)",
+     "D45 (T-34B)"
+    ],
+    "drs:partNumber": [
+     "Part 1"
+    ],
+    "drs:subPart": null,
+    "drs:sectionNumber": null,
+    "drs:saibIssueDate": "2002-12-16",
+    "drs:comments": null,
+    "drs:SFARReference": null,
+    "drs:CARReference": null,
+    "drs:ADReference": null,
+    "drs:ACReference": null,
+    "drs:documentOwner": null,
+    "drs:primaryRespOffice": null,
+    "docLastModifiedDate": null,
+    "documentGuid": "8635147B6EB589EC8625721F0052EC0B",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/8635147B6EB589EC8625721F0052EC0B.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/26305fbf-f4e4-4016-ba59-dabeb33daa51",
+    "mainDocumentFileName": "CE-02-38R2.pdf",
+    "hasMoreAttachments": false
+   }
+  ],
+  "AC": [
+   {
+    "drs:documentNumber": "AC 39-8A",
+    "drs:status": "Current",
+    "drs:docID": "AC 39-8A",
+    "drs:changeNumber": null,
+    "drs:acPolicyNumber": [
+     "ANE-2007-33.70-1",
+     "PS-ANE-2011-33-1",
+     "PS-ANM-25-05"
+    ],
+    "drs:title": "Continued Airworthiness Assessments of Powerplant and Auxiliary Power Unit Installations of Transport Category Airplanes",
+    "drs:cancels": [
+     "AC 39-8"
+    ],
+    "drs:cancelledBy": null,
+    "drs:standards": null,
+    "drs:changeDesc": null,
+    "drs:partNumber": [
+     "Part 39",
+     "Part 25",
+     "Part 35",
+     "Part 121",
+     "Part 125",
+     "Part 135"
+    ],
+    "drs:subPart": [
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_"
+    ],
+    "drs:sectionNumber": [
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_"
+    ],
+    "drs:approvalDate": "2026-10-01",
+    "drs:lastReviewedDate": "2026-10-01",
+    "drs:comments": null,
+    "drs:SFARReference": null,
+    "drs:ADReference": null,
+    "drs:EXReference": null,
+    "drs:ACReference": null,
+    "drs:8900Reference": null,
+    "drs:otherOrderReference": null,
+    "drs:airPolicyReference": null,
+    "drs:avsPolicyReference": null,
+    "drs:ABReference": null,
+    "drs:title49Reference": null,
+    "drs:TSOReference": null,
+    "drs:finalRuleReference": null,
+    "drs:NPRMReference": null,
+    "drs:documentOwner": [
+     "AIR-600: Policy & Innovation Division"
+    ],
+    "drs:primaryRespOffice": [
+     "AIR-630: Systems Policy Branch"
+    ],
+    "docLastModifiedDate": "2026-10-02T13:40:35.415Z",
+    "documentGuid": "DRSDOCID111169565820261002111748",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID111169565820261002111748.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/1ee208e2-2959-4135-a44d-746acdcf5987",
+    "mainDocumentFileName": "AC 39-8A.pdf",
+    "hasMoreAttachments": true,
+    "otherAttachmentDetailsUrl": "https://drs.faa.gov/api/drs/data-pull/get-other-attachment-details/1ee208e2-2959-4135-a44d-746acdcf5987"
+   },
+   {
+    "drs:documentNumber": "AC 39-8A",
+    "drs:status": "Current",
+    "drs:docID": "AC 39-8A",
+    "drs:changeNumber": null,
+    "drs:acPolicyNumber": [
+     "ANE-2007-33.70-1",
+     "PS-ANE-2011-33-1",
+     "PS-ANM-25-05"
+    ],
+    "drs:title": "Continued Airworthiness Assessments of Powerplant and Auxiliary Power Unit Installations of Transport Category Airplanes",
+    "drs:cancels": [
+     "AC 39-8"
+    ],
+    "drs:cancelledBy": null,
+    "drs:standards": null,
+    "drs:changeDesc": null,
+    "drs:partNumber": [
+     "Part 39",
+     "Part 25",
+     "Part 35",
+     "Part 121",
+     "Part 125",
+     "Part 135"
+    ],
+    "drs:subPart": [
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_"
+    ],
+    "drs:sectionNumber": [
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_",
+     "_EMPTY_"
+    ],
+    "drs:approvalDate": "2026-10-01",
+    "drs:lastReviewedDate": "2026-10-01",
+    "drs:comments": null,
+    "drs:SFARReference": null,
+    "drs:ADReference": null,
+    "drs:EXReference": null,
+    "drs:ACReference": null,
+    "drs:8900Reference": null,
+    "drs:otherOrderReference": null,
+    "drs:airPolicyReference": null,
+    "drs:avsPolicyReference": null,
+    "drs:ABReference": null,
+    "drs:title49Reference": null,
+    "drs:TSOReference": null,
+    "drs:finalRuleReference": null,
+    "drs:NPRMReference": null,
+    "drs:documentOwner": [
+     "AIR-600: Policy & Innovation Division"
+    ],
+    "drs:primaryRespOffice": [
+     "AIR-630: Systems Policy Branch"
+    ],
+    "docLastModifiedDate": "2026-10-02T13:40:35.415Z",
+    "documentGuid": "DRSDOCID111169565820261002111748",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID111169565820261002111748.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/1ee208e2-2959-4135-a44d-746acdcf5987",
+    "mainDocumentFileName": "AC 39-8A.pdf",
+    "hasMoreAttachments": true,
+    "otherAttachmentDetailsUrl": "https://drs.faa.gov/api/drs/data-pull/get-other-attachment-details/1ee208e2-2959-4135-a44d-746acdcf5987"
+   }
+  ],
+  "FAR": [
+   {
+    "drs:documentNumber": "1",
+    "drs:partNumberDescription": [
+     "Part 1 - DEFINITIONS AND ABBREVIATIONS"
+    ],
+    "drs:farPartName": "Definitions and Abbreviations",
+    "drs:subPart": null,
+    "drs:farSubjectGroup": null,
+    "drs:sectionNumber": [
+     "Sec. 1.1"
+    ],
+    "drs:status": "Historical",
+    "drs:title": "General definitions.",
+    "drs:farAmendmentNumber": [
+     "1-70"
+    ],
+    "drs:effectiveDate": "2017-03-21",
+    "drs:standards": null,
+    "drs:farNPRMActions": null,
+    "drs:farFinalRuleActions": "Doc. No. 1150, 27 FR 4588, May 15, 1962",
+    "drs:documentOwner": null,
+    "drs:primaryRespOffice": null,
+    "drs:comments": null,
+    "drs:farSectionRule": "As used in Subchapters A through K of this chapter, unless the context requires otherwise: \\n  Administrator means the Federal Aviation Administrator or any person to whom he has delegated his authority in the matter concerned. \\n  Aerodynamic coefficients means non-dimensional coefficients for aero",
+    "docLastModifiedDate": "2022-10-28T00:00:00.000Z",
+    "documentGuid": "CFR_20170321_0001_1-1_0000000000",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/CFR_20170321_0001_1-1_0000000000.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/cde0fb52-636f-460b-867f-002e7587a775",
+    "mainDocumentFileName": "Sec. 1.1.html",
+    "hasMoreAttachments": false
+   },
+   {
+    "drs:documentNumber": "1",
+    "drs:partNumberDescription": [
+     "Part 1 - DEFINITIONS AND ABBREVIATIONS"
+    ],
+    "drs:farPartName": "Definitions and Abbreviations",
+    "drs:subPart": null,
+    "drs:farSubjectGroup": null,
+    "drs:sectionNumber": [
+     "Sec. 1.1"
+    ],
+    "drs:status": "Historical",
+    "drs:title": "General definitions.",
+    "drs:farAmendmentNumber": [
+     "1-73"
+    ],
+    "drs:effectiveDate": "2018-07-27",
+    "drs:standards": null,
+    "drs:farNPRMActions": null,
+    "drs:farFinalRuleActions": "Doc. No. 1150, 27 FR 4588, May 15, 1962",
+    "drs:documentOwner": null,
+    "drs:primaryRespOffice": null,
+    "drs:comments": null,
+    "drs:farSectionRule": "As used in Subchapters A through K of this chapter, unless the context requires otherwise: \\n  Administrator means the Federal Aviation Administrator or any person to whom he has delegated his authority in the matter concerned. \\n  Aerodynamic coefficients means non-dimensional coefficients for aero",
+    "docLastModifiedDate": "2022-10-28T00:00:00.000Z",
+    "documentGuid": "CFR_20180727_0001_1-1_0000000000",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/CFR_20180727_0001_1-1_0000000000.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/8a187da9-94d4-4797-8960-eecc5b4f67f7",
+    "mainDocumentFileName": "Sec. 1.1.html",
+    "hasMoreAttachments": false
+   }
+  ],
+  "NPRM": [
+   {
+    "drs:documentNumber": "13-02",
+    "drs:status": "Current",
+    "drs:nprmDocket": "FAA-2012-0929",
+    "drs:nprmNotice": "13-02",
+    "drs:nprmActions": [
+     "-"
+    ],
+    "drs:title": "Prohibition on Personal Use of Electronic Devices on the Flight Deck",
+    "drs:nprmSummary": "The proposed rule would prohibit flightcrew members in operations under part 121 from using a personal wireless communications device or laptop computer for personal use while at their duty station on the flight deck while the aircraft is being operated. This rule, which conforms FAA regulations wit",
+    "drs:nprmCitation": "Federal Register Volume 78, Number 10 (Tuesday, January 15, 2013)",
+    "drs:nprmPageNumber": "Pages 2912-2916",
+    "drs:nprmAction": "Notice of proposed rulemaking (NPRM).",
+    "drs:nprmAddresses": [
+     "Send comments identified by docket number FAA-2012-0929 using any of the following methods: \nFederal eRulemaking Portal: Go to http://www.regulations.gov and follow the online instructions for sending your comments electronically. \nMail: Send comments to Docket Operations, M-30; U.S. Department of T"
+    ],
+    "drs:nprmFurtherInfoContact": "For technical questions concerning this proposed rule, contact Nancy Lauck Claussen, Air Transportation Division (AFS-200), Flight Standards Service, Federal Aviation Administration, 800 Independence Avenue SW., Washington, DC 20591; telephone (202) 267-8166; email Nancy.L.Claussen@faa.gov. \n\tFor le",
+    "drs:nprmSupplementaryInfo": [
+     "SUPPLEMENTARY INFORMATION: See the \"Additional Information\" section for information on how to comment on this proposal and how the FAA will handle comments received. The \"Additional Information\" section also contains related information about the docket, privacy, the handling of proprietary or confi"
+    ],
+    "drs:nprmRegulatoryText": "PART 121--OPERATING REQUIREMENTS: DOMESTIC, FLAG, AND SUPPLEMENTAL OPERATIONS\n\n1. The authority citation for part 121 continues to read as follows:\n\n\tAuthority: 49 U.S.C. 106(g), 40113, 40119, 41706, 44101, 44701-44702, 44705, 44709-44711, 44713, 44716-44717, 44722, 44732, 46105.\n\n2. Amend Sec.  121",
+    "drs:nprmFooter": "Issued in Washington, DC, on January 9, 2013.\nJohn M. Allen,\nDirector, Flight Standards Service.\n[FR Doc. 2013-00608 Filed 1-14-13; 8:45 am]\nBILLING CODE 4910-13-P",
+    "drs:partNumber": [
+     "Part 121"
+    ],
+    "drs:subPart": null,
+    "drs:sectionNumber": null,
+    "drs:nprmIssueDate": "2013-01-09",
+    "drs:nprmPublishDate": null,
+    "drs:nprmCommentDate": "2013-03-18",
+    "drs:comments": null,
+    "drs:SFARReference": null,
+    "drs:CARReference": null,
+    "drs:ADReference": null,
+    "drs:airPolicyReference": null,
+    "drs:ABReference": null,
+    "drs:documentOwner": null,
+    "drs:primaryRespOffice": null,
+    "docLastModifiedDate": "2013-01-15T00:00:00.000Z",
+    "documentGuid": "EED24E7F9FA3193786257AF4004CD6FC",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/EED24E7F9FA3193786257AF4004CD6FC.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/ca36f514-6d29-4095-af9d-deffad95e5d0",
+    "mainDocumentFileName": "DRS_13-02.html",
+    "hasMoreAttachments": false
+   }
+  ],
+  "ADFRAWD": [
+   {
+    "drs:documentNumber": "2026-20-08",
+    "drs:status": "Current",
+    "drs:adfrawdDocketNo": "FAA-2026-4657",
+    "drs:adfrawdAmendment": "39-23481",
+    "drs:adfrawdMake": [
+     "Airbus Helicopters"
+    ],
+    "drs:adfrawdModel": [
+     "AS355E",
+     "AS355F",
+     "AS355F1",
+     "AS355F2",
+     "AS355N"
+    ],
+    "drs:adfrawdProductType": [
+     "Aircraft"
+    ],
+    "drs:adfrawdProductSubType": [
+     "Rotorcraft"
+    ],
+    "drs:adfrawdSubject": "Tail rotor drive system",
+    "drs:adfrawdAffectedAD": null,
+    "drs:adfrawdSupersededAD": null,
+    "drs:adfrawdAffectedBy": null,
+    "drs:adfrawdSupersededBy": null,
+    "drs:adfrawdCitation": "Federal Register, Volume 91 Number 189 (Thursday, October 1, 2026)",
+    "drs:adfrawdPageNumber": "(Pages 62307-62309)",
+    "drs:title": "Airworthiness Directives; Airbus Helicopters",
+    "drs:adfrawdAction": "Final rule.",
+    "drs:adfrawdSummary": "The FAA is adopting a new airworthiness directive (AD) for all Airbus Helicopters Model AS355E, AS355F, AS355F1, AS355F2, and AS355N helicopters. This AD was prompted by the determination that the tail rotor drive fan wheels (fan wheels) and the impeller second stage have been incorrectly identified",
+    "drs:adfrawdAddresses": "AD Docket: You may examine the AD docket at regulations.gov under Docket No.FAA-2026-4657; or in person at Docket Operations between 9 a.m. and 5 p.m., Monday through Friday, except Federal holidays. The AD docket contains this final rule, the mandatory continuing airworthiness information (MCAI), a",
+    "drs:adfrawdFurtherInfoContact": "Andrew Gronau, Aviation Safety Engineer, FAA, 1600 Stewart Avenue, Suite 410, Westbury, NY 11590; phone: (847) 294-7378; email: andrew.s.gronau@faa.gov.",
+    "drs:adfrawdSupplementaryInfo": "Background The FAA issued a notice of proposed rulemaking (NPRM) to amend 14 CFR part 39 by adding an AD that would apply to all Airbus Helicopters Model AS355E, AS355F, AS355F1, AS355F2, and AS355N helicopters. The NPRM was published in the Federal Register on June 18, 2026 (91 FR 36771). The NPRM ",
+    "drs:adfrawdRegulatoryText": "1. The authority citation for part 39 continues to read as follows: Authority: 49 U.S.C. 106(g), 40113, 44701. 2. The FAA amends § 39.13 by adding the following new airworthiness directive: 2026-20-08 Airbus Helicopters: Amendment 39-23481; Docket No. FAA-2026-4657; Project Identifier MCAI-2024-0038",
+    "drs:adfrawdFooter": "Issued on September 24, 2026. Steven W. Thompson, Acting Deputy Director, Compliance & Airworthiness Division, Aircraft Certification Service. [FR Doc. 2026-20098 Filed 9-30-26; 8:45 am]",
+    "drs:partNumber": [
+     "Part 39"
+    ],
+    "drs:subPart": [
+     "_EMPTY_"
+    ],
+    "drs:sectionNumber": [
+     "_EMPTY_"
+    ],
+    "drs:adfrawdCitationPublishDate": "2026-10-01",
+    "drs:adfrawdIssueDate": "2026-09-24",
+    "drs:comments": null,
+    "drs:effectiveDate": "2026-11-05",
+    "drs:documentOwner": [
+     "AIR-700: Compliance & Airworthiness Division"
+    ],
+    "drs:primaryRespOffice": [
+     "AIR-730: International Validation Branch"
+    ],
+    "drs:ACReference": null,
+    "drs:airPolicyReference": null,
+    "drs:additionalReference": null,
+    "docLastModifiedDate": "2026-10-01T14:32:12.089Z",
+    "documentGuid": "FR-ADFRAWD-2026-20098-0000000000",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/FR-ADFRAWD-2026-20098-0000000000.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/f9ff8770-191f-44ac-bc3d-453eaf692d1f",
+    "mainDocumentFileName": "2026-20-08.html",
+    "hasMoreAttachments": false
+   },
+   {
+    "drs:documentNumber": "2026-20-07",
+    "drs:status": "Current",
+    "drs:adfrawdDocketNo": "FAA-2026-11789",
+    "drs:adfrawdAmendment": "39-23480",
+    "drs:adfrawdMake": [
+     "Leonardo S.p.a."
+    ],
+    "drs:adfrawdModel": [
+     "AB139",
+     "AW139"
+    ],
+    "drs:adfrawdProductType": [
+     "Aircraft"
+    ],
+    "drs:adfrawdProductSubType": [
+     "Rotorcraft"
+    ],
+    "drs:adfrawdSubject": "Engine exhaust system",
+    "drs:adfrawdAffectedAD": null,
+    "drs:adfrawdSupersededAD": null,
+    "drs:adfrawdAffectedBy": null,
+    "drs:adfrawdSupersededBy": null,
+    "drs:adfrawdCitation": "Federal Register, Volume 91 Number 189 (Thursday, October 1, 2026)",
+    "drs:adfrawdPageNumber": "(Pages 62301-62304)",
+    "drs:title": "Airworthiness Directives; Leonardo S.p.a. Helicopters",
+    "drs:adfrawdAction": "Final rule; request for comments.",
+    "drs:adfrawdSummary": "The FAA is adopting a new airworthiness directive (AD) for certain Leonardo S.p.a. Model AB139 and AW139 helicopters. This AD was prompted by a report of a nozzle exhaust duct clamp separating from the engine nozzle duct and coming to rest on the tail rotor (TR) drive shaft. This AD requires repetit",
+    "drs:adfrawdAddresses": "You may send comments, using the procedures found in 14 CFR 11.43 and 11.45, by any of the following methods: - Federal eRulemaking Portal: Go to regulations.gov. Follow the instructions for submitting comments. - Fax: (202) 493-2251. - Mail: U.S. Department of Transportation, Docket Operations, M-3",
+    "drs:adfrawdFurtherInfoContact": "Evan Weaver, Aviation Safety Engineer, FAA, 1600 Stewart Avenue, Suite 410, Westbury, NY 11590; phone: (316) 944-8910; email: evan.p.weaver@faa.gov.",
+    "drs:adfrawdSupplementaryInfo": "Comments Invited The FAA invites you to send any written data, views, or arguments about this final rule. Send your comments using a method listed under ADDRESSES . Include \"Docket No. FAA-2026-11789; Project Identifier MCAI-2026-00908-R\" at the beginning of your comments. The most helpful comments ",
+    "drs:adfrawdRegulatoryText": "1. The authority citation for part 39 continues to read as follows: Authority: 49 U.S.C. 106(g), 40113, 44701. 2. The FAA amends § 39.13 by adding the following new airworthiness directive: 2026-20-07 Leonardo S.p.a.: Amendment 39-23480; Docket No. FAA-2026-11789; Project Identifier MCAI-2026-00908-",
+    "drs:adfrawdFooter": "Issued on September 24, 2026. Steven W. Thompson, Acting Deputy Director, Compliance & Airworthiness Division, Aircraft Certification Service. [FR Doc. 2026-20100 Filed 9-30-26; 8:45 am]",
+    "drs:partNumber": [
+     "Part 39"
+    ],
+    "drs:subPart": [
+     "_EMPTY_"
+    ],
+    "drs:sectionNumber": [
+     "_EMPTY_"
+    ],
+    "drs:adfrawdCitationPublishDate": "2026-10-01",
+    "drs:adfrawdIssueDate": "2026-09-24",
+    "drs:comments": null,
+    "drs:effectiveDate": "2026-10-16",
+    "drs:documentOwner": [
+     "AIR-700: Compliance & Airworthiness Division"
+    ],
+    "drs:primaryRespOffice": [
+     "AIR-730: International Validation Branch"
+    ],
+    "drs:ACReference": null,
+    "drs:airPolicyReference": null,
+    "drs:additionalReference": null,
+    "docLastModifiedDate": "2026-10-01T14:38:21.637Z",
+    "documentGuid": "FR-ADFRAWD-2026-20100-0000000000",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/FR-ADFRAWD-2026-20100-0000000000.0001",
+    "mainDocumentDownloadURL": "https://drs.faa.gov/api/drs/data-pull/download/ca019da0-a899-4b35-8071-1233bef2aab1",
+    "mainDocumentFileName": "2026-20-07.html",
+    "hasMoreAttachments": false
+   }
+  ],
+  "PMA": [
+   {
+    "drs:documentNumber": "ODA-JA-612",
+    "drs:status": "Current",
+    "drs:pmaSubStatus": null,
+    "drs:pmaNumber": "PQ1015CE",
+    "drs:pmaHolder": "Jet Avion Corporation A HEICO Aerospace Company",
+    "drs:pmaPartNumber": [
+     "411A2760-11JA"
+    ],
+    "drs:pmaPartName": "Cover Assy ",
+    "drs:pmaApprovedReplace": "411A2760-11",
+    "drs:pmaApproveBasis": "Test and Computations per 14 CFR § 21.303,DWG No:  411A2760-11JA Rev:  B  Date:  2026/08/28 or later FAA approved revisions.",
+    "drs:pmaMake": [
+     "The Boeing Company"
+    ],
+    "drs:pmaModel": [
+     "737-700 Series",
+     "737-800 Series"
+    ],
+    "drs:pmaAddress": "3000 Taft Street",
+    "drs:pmaCity": "Hollywood",
+    "drs:pmaState": "FL",
+    "drs:pmaZIP": "33021",
+    "drs:pmaCountry": "United States",
+    "drs:partNumber": [
+     "Part 21"
+    ],
+    "drs:subPart": [
+     "_EMPTY_"
+    ],
+    "drs:sectionNumber": [
+     "Sec. 21.301"
+    ],
+    "drs:pmaSupDate": "2026-09-24",
+    "drs:comments": null,
+    "drs:documentOwner": [
+     "AIR-800: System Oversight"
+    ],
+    "drs:pmaRespDir": "AIR-856: Orlando Certificate Management Section",
+    "docLastModifiedDate": "2026-09-25T13:54:39.126Z",
+    "documentGuid": "DRSDOCID164340593120260925135439",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID164340593120260925135439.0001"
+   },
+   {
+    "drs:documentNumber": "ODA-JA-612",
+    "drs:status": "Current",
+    "drs:pmaSubStatus": null,
+    "drs:pmaNumber": "PQ1015CE",
+    "drs:pmaHolder": "Jet Avion Corporation A HEICO Aerospace Company",
+    "drs:pmaPartNumber": [
+     "720Z3520-5JA"
+    ],
+    "drs:pmaPartName": "Washer, Blocker-Door Bracket ",
+    "drs:pmaApprovedReplace": "720Z3520-5",
+    "drs:pmaApproveBasis": "Test and Computations per 14 CFR § 21.303,DWG No:  720Z3520-5JA Rev:  –  Date:  2026/04/24 or later FAA approved revisions.",
+    "drs:pmaMake": [
+     "The Boeing Company"
+    ],
+    "drs:pmaModel": [
+     "787-8",
+     "787-9",
+     "787-10"
+    ],
+    "drs:pmaAddress": "3000 Taft Street",
+    "drs:pmaCity": "Hollywood",
+    "drs:pmaState": "FL",
+    "drs:pmaZIP": "33021",
+    "drs:pmaCountry": "United States",
+    "drs:partNumber": [
+     "Part 21"
+    ],
+    "drs:subPart": [
+     "_EMPTY_"
+    ],
+    "drs:sectionNumber": [
+     "Sec. 21.301"
+    ],
+    "drs:pmaSupDate": "2026-09-24",
+    "drs:comments": null,
+    "drs:documentOwner": [
+     "AIR-800: System Oversight"
+    ],
+    "drs:pmaRespDir": "AIR-856: Orlando Certificate Management Section",
+    "docLastModifiedDate": "2026-09-25T13:54:39.126Z",
+    "documentGuid": "DRSDOCID145624474020260925135439",
+    "documentURL": "https://drs.faa.gov/browse/excelExternalWindow/DRSDOCID145624474020260925135439.0001"
+   }
+  ]
+ }
+}

@@ -1,0 +1,89 @@
+[project]
+name = "faa-drs"
+version = "0.1.0"
+description = "Python SDK for the FAA Dynamic Regulatory System (DRS) API."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "cldixon" }]
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27,<1",
+    "anyio>=4.4,<5",
+    "pydantic>=2.7,<3",
+]
+keywords = ["faa", "drs", "aviation", "regulatory", "airworthiness", "sdk"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/cldixon/faa-drs"
+Documentation = "https://cldixon.github.io/faa-drs/"
+Repository = "https://github.com/cldixon/faa-drs"
+Issues = "https://github.com/cldixon/faa-drs/issues"
+Changelog = "https://github.com/cldixon/faa-drs/releases"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.15",
+    "ty>=0.0.80",
+]
+docs = [
+    "zensical>=0.0.67",
+    "mkdocstrings-python>=1.18",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.12"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E", "W", "F", "I", "B", "UP", "SIM", "RUF", "N", "C4", "PT", "PL", "PERF", "S", "DTZ", "PTH", "RET",
+]
+ignore = [
+    "PLR0913",  # Keyword-heavy public signatures are intentional.
+    "PLR2004",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/faa_drs/_doctype.py" = ["E501", "RUF001"]
+"tests/**" = ["S101", "PLR2004", "S105", "S106", "PLC0415"]
+"scripts/**" = ["S", "T20"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers", "--strict-config", "-m", "not live"]
+markers = ["live: calls the real DRS API (needs DRS_API_KEY)"]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source = ["faa_drs"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_also = ["if TYPE_CHECKING:", "@overload"]

@@ -1,7 +1,7 @@
 # FAA DRS API — working notes
 
-Sources: `reference/DRS_API_Technical_Documentation.pdf` (v6.0, 2025-08-07) and
-`reference/DRS_Document_Types_Metadata_Mapping.csv`, plus live probes made on 2026-10-04.
+Sources: `drs-api-technical-design.pdf` (v6.0, 2025-08-07) and
+`doctypes.csv`, plus live probes made on 2026-10-04.
 "Observed" means we saw it on the live API; the rest comes from the docs.
 
 ## Basics
