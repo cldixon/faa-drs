@@ -1,0 +1,1988 @@
+Service,Document Type name in DRS ,Document Type Name in API request,Metadata Name in DRS,Metadata Name in API Response ,Metadata Value Data Type,Deafult  Sort By
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Case Name,faagov:cpaCaseName,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Federal Court Appeal Status,faagov:cpaFederalCourtAppealStatus,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,DMS Number,faagov:cpaDmsNumber,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,FDMS Number,faagov:cpaFdmsNumber,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Docket Number,faagov:cpaDocketNumber,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Federal Court Appeal Status Summary,faagov:federalCourtAppealStatusSummary,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,USC Reference,faagov:cpaUscReference,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Federal Rules of Civil Procedure,faagov:cpaFederalRulesOfCivilProcedure,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Served Date,faagov:cpaServedDate,DATE,TRUE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Issue Date,drs:docIssuedDate,DATE,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Comments,drs:comments,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Primary Subject,faagov:cpaPrimarySubject,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Secondary Subject,faagov:cpaSecondarySubject,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Tertiary Subject,faagov:cpaTertiarySubject,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,FAA Order Number,drs:documentNumber,TEXT,FALSE
+AGC,Civil Penalty Appeals,CIVIL_PENALTY_APPEALS,Subject,faagov:cpaSubjectDisplay,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Status,drs:status,TEXT,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Document Issue Year,drs:docYear,TEXT,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Document Issue Date,drs:docIssuedDate,DATE,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Comments,drs:comments,TEXT,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,CAR Reference,drs:CARReference,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,AD Reference,drs:ADReference,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,AB Reference,drs:ABReference,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AGC,Legal Interpretations,LEGAL_INTERPRETATIONS,Title,drs:title,TEXT,TRUE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Status,drs:status,TEXT,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Equipment/Article Name,faagov:norseeEquipmentArticleName,TEXT,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Part Number,faagov:norseeModelPartNumber,TEXT,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Authorized Function,faagov:norseeDescription,TEXT,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Document Approval Date,faagov:norseeApprovalDate,DATE,TRUE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Comments,drs:comments,TEXT,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,14 CFR Part 21.8(d) / NORSEE Approvals,NORSEE,Manufacturer,faagov:norseeManufacturer,TEXT,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Status,drs:status,TEXT,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Title,drs:title,TEXT,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Docket Id,faagov:consensusDocketId,ARRAY,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Citation,faagov:consensusCitation,TEXT,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Publication Date,faagov:consensusPublicationDate,DATE,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Comments,drs:comments,TEXT,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Accepted Consensus Standards/Notices of Availability,ACCEPTED_CONSENSUS_STANDARDS,Document Number,drs:documentNumber,TEXT,TRUE
+AIR,AD Final Rules,ADFRAWD,Status,drs:status,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Docket Number,drs:adfrawdDocketNo,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Amendment,drs:adfrawdAmendment,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Make,drs:adfrawdMake,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Model,drs:adfrawdModel,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Product Type,drs:adfrawdProductType,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Product Subtype,drs:adfrawdProductSubType,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Subject,drs:adfrawdSubject,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Affected AD,drs:adfrawdAffectedAD,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Superseded AD,drs:adfrawdSupersededAD,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Affected By,drs:adfrawdAffectedBy,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Superseded By,drs:adfrawdSupersededBy,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Citation,drs:adfrawdCitation,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Page Number,drs:adfrawdPageNumber,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Subject Heading,drs:title,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Action,drs:adfrawdAction,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Summary,drs:adfrawdSummary,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Addresses,drs:adfrawdAddresses,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,For Further Information Contact,drs:adfrawdFurtherInfoContact,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Supplementary Information,drs:adfrawdSupplementaryInfo,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Regulatory Text,drs:adfrawdRegulatoryText,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Footer,drs:adfrawdFooter,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Citation Publish Date,drs:adfrawdCitationPublishDate,DATE,TRUE
+AIR,AD Final Rules,ADFRAWD,Document Issue Date,drs:adfrawdIssueDate,DATE,FALSE
+AIR,AD Final Rules,ADFRAWD,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,AD Final Rules,ADFRAWD,Comments,drs:comments,TEXT,FALSE
+AIR,AD Final Rules,ADFRAWD,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,Additional Reference,drs:additionalReference,ARRAY,FALSE
+AIR,AD Final Rules,ADFRAWD,AD Number,drs:documentNumber,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Status,drs:status,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Make,drs:adnprmMake,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Model,drs:adnprmModel,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Product Type,drs:adnprmProductType,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Product Subtype,drs:adnprmProductSubtype,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Subject Heading,drs:title,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Action,drs:adnprmAction,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Addresses,drs:adnprmAddresses,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Citation,drs:adnprmCitation,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Page Number,drs:adnprmPageNumber,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Summary,drs:adnprmSummary,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Link for Submitting Public Comment,drs:adnprmRegulatoryText,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,For Further Information Contact,drs:adnprmFurtherInfoContact,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Supplementary Information,drs:adnprmSupplementaryInfo,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Footer,drs:adnprmFooter,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Other ADNPRM,drs:adnprmOtherADNPRM,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Product Identifier,drs:adnprmProductIdentifier,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Citation Publish Date,drs:adnprmCitationPublishDate,DATE,TRUE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Issue Date,drs:adnprmIssueDate,DATE,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Comments Due Date,drs:adnprmCommentDate,DATE,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Comments,drs:comments,TEXT,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Additional Reference,drs:additionalReference,ARRAY,FALSE
+AIR,AD Notice of Proposed Rulemaking (AD NPRM),ADNPRM,Docket Number,drs:documentNumber,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,Status,drs:status,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,Doc ID,drs:docID,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,Change Number,drs:changeNumber,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,Policy Number,drs:acPolicyNumber,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Subject,drs:title,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,Cancels,drs:cancels,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Canceled By,drs:cancelledBy,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,Standards,drs:standards,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Change Description,drs:changeDesc,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Document Issue Date,drs:approvalDate,DATE,TRUE
+AIR,Advisory Circulars (AC),AC,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+AIR,Advisory Circulars (AC),AC,Comments,drs:comments,TEXT,FALSE
+AIR,Advisory Circulars (AC),AC,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,AVS Policy Reference,drs:avsPolicyReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,TSO Reference,drs:TSOReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Final Rule Reference,drs:finalRuleReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,NPRM Reference,drs:NPRMReference,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Advisory Circulars (AC),AC,AC Number,drs:documentNumber,TEXT,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Status,drs:status,TEXT,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Title,drs:title,TEXT,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Comments,drs:comments,TEXT,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Air Commerce Regulations/Aeronautics Bulletins (AB),AB,Aero-Bulletin Number,drs:documentNumber,TEXT,TRUE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Status,drs:status,TEXT,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Subject,drs:title,TEXT,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Sub-Status,drs:oldStatus,TEXT,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Policy Type,drs:airPolicyType,TEXT,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Cancels,drs:airPolicyCancels,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Canceled By,drs:airPolicyCanceledBy,TEXT,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,AC Reference,drs:airPolicyACNumber,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Order Reference,drs:airPolicyOrderNumber,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Effective Date,drs:effectiveDate,DATE,TRUE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Comments,drs:comments,TEXT,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,"AIR Policy Statements, Memos and Deviations",AIR_POLICY,Policy Number,drs:documentNumber,TEXT,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Status,drs:status,TEXT,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Title,drs:title,TEXT,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Revision,faagov:airQmsRevision,TEXT,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Categories,faagov:airQmsCategories,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Area of Interest,faagov:airQmsAreaOfInterest,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Order Reference,drs:orderReference,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Issue Date,drs:docIssuedDate,DATE,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Comments,drs:comments,TEXT,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,AIR QMS Processes,AIR_QMS_PROCESSES,QPM Number,drs:documentNumber,TEXT,TRUE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Status,drs:status,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Doc ID,drs:docID,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Subject,drs:title,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Cancels,drs:airportACCancels,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Canceled By,drs:airportACCancelledBy,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Change Number,drs:airportACChangeNumber,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Change Description,drs:airportACChangeDescription,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Description,drs:airportACDescription,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Document Issue Date,drs:airportACIssueDate,DATE,TRUE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,Comments,drs:comments,TEXT,FALSE
+AIR,Airport Advisory Circulars (AC),AIRPORT_AC,AC Number,drs:documentNumber,TEXT,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Status,drs:status,TEXT,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Subject,drs:title,TEXT,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,JASC Code,faagov:acsJASCCode,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Product Type,faagov:acsProductType,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Product Subtype,faagov:acsProductSubtype,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Make,faagov:acsMake,TEXT,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Model,faagov:acsModel,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Document Issue Date,drs:docIssuedDate,DATE,TRUE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Comments,drs:comments,TEXT,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Notice Reference,drs:noticeReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,AVS Policy Reference,drs:avsPolicyReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,AVP Policy Reference,drs:avpPolicyReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,SAIB Reference,faagov:acsSAIBNumber,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,STC Reference,faagov:acsSTCNumber,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,TCDS Reference,faagov:acsTCDSNumber,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,ACS Number,drs:documentNumber,TEXT,FALSE
+AIR,Airworthiness Concern Sheets (ACS),AIRWORTHINESS_CONCERN_SHEETS,Make/Model,faagov:acsMakeModel,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Status,drs:status,TEXT,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Subject,drs:title,TEXT,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Sub-Status,drs:oldStatus,TEXT,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Policy Type,drs:avpPolicyType,TEXT,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Cancels,drs:avpPolicyCancels,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Canceled By,drs:avpPolicyCanceledBy,TEXT,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,AC Reference,drs:avpPolicyACNumber,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Order Reference,drs:avpPolicyOrderNumber,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Effective Date,drs:effectiveDate,DATE,TRUE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Comments,drs:comments,TEXT,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,"AVP Policy Statements, Memos and Deviations",AVP_POLICY,Policy Number,drs:documentNumber,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Status,drs:status,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Subject,drs:title,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Sub-Status,drs:oldStatus,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Policy Type,drs:policyType,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Cancels,drs:policyCancels,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Canceled By,drs:policyCanceledBy,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Effective Date,drs:effectiveDate,DATE,TRUE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Comments,drs:comments,TEXT,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,AC Reference,drs:policyACNumber,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Order Reference,drs:orderNumber,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,"AVS Policy Statements, Memos and Deviations",POLICY,Policy Number,drs:documentNumber,TEXT,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,Status,drs:status,TEXT,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,Subject,drs:title,TEXT,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,Document Closure Date,faagov:CATAClosureDate,DATE,TRUE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,Comments,drs:comments,TEXT,FALSE
+AIR,CATA Worklist Item (CWI) Decision Documents,CATA_WORKLIST_ITEM,CATA Reference Number,drs:documentNumber,TEXT,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,Status,drs:status,TEXT,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,Title,drs:title,TEXT,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,Comments,drs:comments,TEXT,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Civil Aeronautics Manuals (CAM),CAM,CAM Number,drs:documentNumber,TEXT,TRUE
+AIR,Civil Air Regulations (CARs),CAR,Status,drs:status,TEXT,FALSE
+AIR,Civil Air Regulations (CARs),CAR,Amendment/Regulation Number,drs:amendRegNo,TEXT,FALSE
+AIR,Civil Air Regulations (CARs),CAR,Title,drs:title,TEXT,FALSE
+AIR,Civil Air Regulations (CARs),CAR,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Civil Air Regulations (CARs),CAR,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Civil Air Regulations (CARs),CAR,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Civil Air Regulations (CARs),CAR,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Civil Air Regulations (CARs),CAR,Comments,drs:comments,TEXT,FALSE
+AIR,Civil Air Regulations (CARs),CAR,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Civil Air Regulations (CARs),CAR,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Civil Air Regulations (CARs),CAR,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Civil Air Regulations (CARs),CAR,CAR Number,drs:documentNumber,TEXT,TRUE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Status,drs:status,TEXT,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Subject Heading,drs:title,TEXT,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Make,faagov:canicMakeValues,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Model,faagov:canicModels,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Document Issue Date,faagov:canicIssueDate,DATE,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Comments,drs:comments,TEXT,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,STC Reference,drs:STCReference,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,TCDS Reference,drs:TCDSReference,ARRAY,FALSE
+AIR,Continued Airworthiness Notification to the International Community (CANIC),CANIC,CANIC Number,drs:documentNumber,TEXT,TRUE
+AIR,Emergency ADs (EAD),ADFREAD,Status,drs:status,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Docket Number,drs:adfreadDocketNo,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Amendment,drs:adfreadAmendment,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Subject,drs:adfreadSubject,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Make,drs:adfreadMake,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Model,drs:adfreadModel,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Product Type,drs:adfreadProductTypes,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Product Subtype,drs:adfreadProductSubTypes,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Citation,drs:adfreadCitation,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Page Number,drs:adfreadPageNumber,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Subject Heading,drs:title,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Affected AD,drs:adfreadAffectedAD,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Superseded AD,drs:adfreadSupersededAD,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Affected By,drs:adfreadAffectedBy,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Superseded By,drs:adfreadSupersededBy,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Citation Publish Date,drs:adfreadCitationPublishDate,DATE,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Document Issue Date,drs:adfreadIssueDate,DATE,TRUE
+AIR,Emergency ADs (EAD),ADFREAD,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Comments,drs:comments,TEXT,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Emergency ADs (EAD),ADFREAD,AD Number,drs:documentNumber,TEXT,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Status,drs:status,TEXT,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Subject,drs:title,TEXT,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Applicant,drs:elosApplicant,TEXT,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Make,drs:elosMake,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Model/Series,drs:elosModel,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Document Issue Date,drs:elosDate,DATE,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Comments,drs:comments,TEXT,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Equivalent Levels of Safety (ELOS),ELOS,Finding Number,drs:documentNumber,TEXT,TRUE
+AIR,Final Rules,CFRFRSFAR,Status,drs:status,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Final Rule Actions,drs:cfrfrsfarFinalRuleActions,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,NPRM Actions,drs:cfrfrsfarNPRMActions,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Docket Number,drs:cfrfrsfarDocket,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Subject Heading,drs:title,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Addresses,drs:cfrfrsfarAddress,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Citation,drs:cfrfrsfarCitation,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Page Number,drs:cfrfrsfarPageNumber,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Action,drs:cfrfrsfarAction,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Summary,drs:cfrfrsfarSummary,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,For Further Information Contact,drs:cfrfrsfarFurtherInfoContact,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Supplementary Information,drs:cfrfrsfarSupplementaryInfo,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Regulatory Text,drs:cfrfrsfarRegulatoryText,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,Footer,drs:cfrfrsfarFooter,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,Citation Publish Date,drs:cfrfrsfarCitationPublishDate,DATE,FALSE
+AIR,Final Rules,CFRFRSFAR,Comment Date,drs:cfrfrsfarCommentDate,DATE,FALSE
+AIR,Final Rules,CFRFRSFAR,Issue Date,drs:cfrfrsfarIssueDate,DATE,FALSE
+AIR,Final Rules,CFRFRSFAR,Termination Date,drs:cfrfrsfarTerminationDate,DATE,FALSE
+AIR,Final Rules,CFRFRSFAR,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Final Rules,CFRFRSFAR,Comments,drs:comments,TEXT,FALSE
+AIR,Final Rules,CFRFRSFAR,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Final Rules,CFRFRSFAR,Amendment,drs:documentNumber,TEXT,TRUE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Status,drs:status,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Docket Number,drs:nprmDocket,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,NPRM Notice,drs:nprmNotice,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,NPRM Actions,drs:nprmActions,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Subject,drs:title,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Summary,drs:nprmSummary,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Citation,drs:nprmCitation,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Page Number,drs:nprmPageNumber,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Action,drs:nprmAction,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Addresses,drs:nprmAddresses,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Further Information Contact,drs:nprmFurtherInfoContact,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Supplementary Information,drs:nprmSupplementaryInfo,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Regulatory Text,drs:nprmRegulatoryText,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Footer,drs:nprmFooter,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Issue Date,drs:nprmIssueDate,DATE,TRUE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Citation Publish Date,drs:nprmPublishDate,DATE,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Comments Due Date,drs:nprmCommentDate,DATE,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Comments,drs:comments,TEXT,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Notices of Proposed Rulemaking (NPRM),NPRM,Notice Number,drs:documentNumber,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Status,drs:status,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Sub-Status,drs:pmaSubStatus,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Supplement Number,drs:documentNumber,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,PMA Holder Number,drs:pmaNumber,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,PMA Holder Name,drs:pmaHolder,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,PMA Part Number,drs:pmaPartNumber,ARRAY,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Part Name,drs:pmaPartName,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Approved Replacement for Part Number,drs:pmaApprovedReplace,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,FAA Approval Basis,drs:pmaApproveBasis,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Make,drs:pmaMake,ARRAY,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Model,drs:pmaModel,ARRAY,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Address,drs:pmaAddress,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,City,drs:pmaCity,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,State,drs:pmaState,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Zip,drs:pmaZIP,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Country,drs:pmaCountry,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Supplement Date,drs:pmaSupDate,DATE,TRUE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Comments,drs:comments,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Service/Office,drs:documentOwner,TEXT,FALSE
+AIR,Parts Manufacturer Approvals (PMA),PMA,Office of Primary Responsibility,drs:pmaRespDir,TEXT,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Status,drs:status,TEXT,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Subject,drs:title,TEXT,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Revision Number,drs:revNum,TEXT,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Product Type,drs:productType,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Product Subtype,drs:productSubType,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Make,drs:saibMake,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Model/Series,drs:saibModel,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Issue Date,drs:saibIssueDate,DATE,TRUE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Comments,drs:comments,TEXT,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Special Airworthiness Information Bulletins (SAIB),SAIB,SAIB Number,drs:documentNumber,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Status,drs:status,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Docket Number,drs:scfinalDocketNumber,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Subject,drs:title,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Make,drs:scfinalMake,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Model,drs:scfinalModel,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Product Type,drs:scfinalProductType,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Product Subtype,drs:scfinalProductSubType,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Applicant,drs:scfinalApplicant,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,SC Docket,drs:scfinalDocketSpecialConditions,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Summary,drs:scfinalSummary,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,The Proposed Special Conditions,drs:scfinalSCInfoText,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Citation,drs:scfinalCitation,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,For Further Information Contact,drs:scfinalFurtherInfoContact,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Supplementary Information,drs:scfinalSupplementaryInfo,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Page Number,drs:scfinalPageNumber,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Action,drs:scfinalAction,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,Signatory Information,drs:scfinalFooter,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Federal Register Publication Date,drs:scfinalPublishDate,DATE,FALSE
+AIR,Special Conditions (Final),SCFINAL,Document Issue Date,drs:scfinalIssueDate,DATE,FALSE
+AIR,Special Conditions (Final),SCFINAL,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Special Conditions (Final),SCFINAL,Comments Close,drs:scfinalCommentsCloseDate,DATE,FALSE
+AIR,Special Conditions (Final),SCFINAL,Comments,drs:comments,TEXT,FALSE
+AIR,Special Conditions (Final),SCFINAL,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Special Conditions (Final),SCFINAL,SC Number,drs:documentNumber,TEXT,TRUE
+AIR,Special Conditions (Proposed),SCPROPOSED,Status,drs:status,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Docket Number,drs:scproposedDocketNumber,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Applicant,drs:scproposedApplicant,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Make,drs:scproposedMake,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Model,drs:scproposedModel,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Product Type,drs:scproposedProductType,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Product Subtype,drs:scproposedProductSubType,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Citation,drs:scproposedCitation,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,The Proposed Special Conditions,drs:scproposedSCInfoText,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Subject,drs:title,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Summary,drs:scproposedSummary,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Action,drs:scproposedAction,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Page Number,drs:scproposedPageNumber,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Addresses,drs:scproposedAddresses,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Supplementary Information,drs:scproposedSupplementaryInfo,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,For Further Information Contact,drs:scproposedFurtherInfoContact,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Signatory Information,drs:scproposedFooter,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Citation Publish Date,drs:scproposedCitationPublishDate,DATE,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Issue Date,drs:scproposedIssueDate,DATE,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Comments Close,drs:scproposedCommentDate,DATE,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Comments,drs:comments,TEXT,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Special Conditions (Proposed),SCPROPOSED,Notice Number,drs:documentNumber,TEXT,TRUE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Status,drs:status,TEXT,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Title,drs:title,TEXT,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Regulatory Text,drs:sfarRegulatoryText,TEXT,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,NPRM Actions,drs:sfarNPRMActions,TEXT,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Final Rule Actions,drs:sfarFinalRuleActions,TEXT,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Termination Date,drs:sfarTerminationDate,DATE,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Comments,drs:comments,TEXT,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Special Federal Aviation Regulations (SFAR),SFAR,SFAR Number,drs:documentNumber,TEXT,TRUE
+AIR,Supplemental Type Certificates (STC),STC,Status,drs:status,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,FCAA STC Number,drs:fcaaSTCNumber,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Sub-Status,drs:stcStatus,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Revision Date,drs:stcStatusDate,DATE,TRUE
+AIR,Supplemental Type Certificates (STC),STC,Product Type,drs:stcProductType,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Product Subtype,drs:stcProductSubType,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,STC Holder,drs:stcHolder,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,STC Holder Address,drs:stcAddress,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Country,drs:stcCountry,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Description,drs:title,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,TC Holder,drs:stcMake,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,TC Number,drs:stcTCNumbers,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Model/Series,drs:stcModel,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Special Condition Reference,drs:SCFinalReference,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Application Date,drs:stcAplicationDate,DATE,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Comments,drs:comments,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Supplemental Type Certificates (STC),STC,STC Number,drs:documentNumber,TEXT,FALSE
+AIR,Supplemental Type Certificates (STC),STC,TC Number – TC Holder – Model/Series,drs:stcTCNumbersMakeModel,ARRAY,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Status,drs:status,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Title,drs:title,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,TSOA Holder,drs:tsoiTSOHolder,TEXT,TRUE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Address,drs:tsoiAddress,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,City,drs:tsoiCity,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,State,drs:tsoiState,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Zip,drs:tsoiZip,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Country,drs:tsoiCountry,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Document Issue Date,drs:tsoiDate,DATE,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Comments,drs:comments,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Part/Model Name,drs:tsoiPartName,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Part/Model #,drs:tsoiPartNumber,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,TSO Number,drs:documentNumber,TEXT,FALSE
+AIR,Technical Standard Order Authorizations (TSOA) and Letters of Design Approval (LODA),TSOI,Part/Model Name - Part/Model #,drs:tsoiPartModelNumberName,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Status,drs:status,TEXT,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Sub-Status,drs:tsoStatus,TEXT,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Title,drs:title,TEXT,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Standards,drs:standards,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Effective Date,drs:effectiveDate,DATE,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Comments,drs:comments,TEXT,FALSE
+AIR,Technical Standard Orders (TSO),TSO,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,AC Reference,drs:ACReference,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Order Reference,drs:orderReference,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Technical Standard Orders (TSO),TSO,TSO Number,drs:documentNumber,TEXT,TRUE
+AIR,Title 14 CFR By Part and Section,FAR,Part Number,drs:documentNumber,TEXT,TRUE
+AIR,Title 14 CFR By Part and Section,FAR,CFR Part,drs:partNumberDescription,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,PartName,drs:farPartName,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Subpart/Appendix,drs:subPart,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Subject Group,drs:farSubjectGroup,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Section,drs:sectionNumber,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Status,drs:status,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Title,drs:title,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Amendment,drs:farAmendmentNumber,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Effective Date,drs:effectiveDate,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Standards,drs:standards,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,NPRM Actions,drs:farNPRMActions,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Final Rule Actions,drs:farFinalRuleActions,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Service/Office,drs:documentOwner,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Office of Primary Responsibility,drs:primaryRespOffice,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,Comments,drs:comments,,FALSE
+AIR,Title 14 CFR By Part and Section,FAR,SECTION RULE,drs:farSectionRule,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Status,drs:status,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Sub-Status,drs:tcdsmodelSubStatus,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Revision Number,drs:tcdsmodelRevisionNumber,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Product Type,drs:tcdsmodelProductType,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Product Subtype,drs:tcdsmodelProductSubType,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,TC Holder,drs:tcdsmodelTCHolder,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,TC Holder Short Name,drs:tcdsmodelTCHolderShortName,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,PC/PLR,drs:tcdsPcPlr,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Model,drs:tcdsmodelModel,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Unofficial Name,drs:tcdsmodelUnofficialName,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Former TC Holders,drs:tcdsmodelFormerHolders,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Model Comments,drs:tcdsmodelModelComments,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,AB Reference,drs:ABReference,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Special Condition Reference,drs:SCFinalReference,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Revision Date,drs:tcdsmodelRevisionDate,DATE,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Comments,drs:comments,TEXT,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Type Certificate Data Sheets (TCDS),TCDSMODEL,TCDS Number,drs:documentNumber,TEXT,TRUE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Status,drs:status,TEXT,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Subject,drs:title,TEXT,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Document Issue Date,drs:docIssuedDate,DATE,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Document Issue Year,drs:docYear,TEXT,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Document Rescinded Date,drs:docRescindedDate,DATE,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Comments,drs:comments,TEXT,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,AD Reference,drs:ADReference,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,CAR Reference,drs:CARReference,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Exemption Reference,drs:EXReference,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AIR,Unapproved Parts Notifications (UPN),UNAPPROVED_PARTS_NOTIFICATIONS,Document Number,drs:documentNumber,TEXT,TRUE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Status,drs:status,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Chapter Title,drs:title,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Publications,faagov:fireSafetyPublication,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Service/Office,drs:documentOwner,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,AC Reference,drs:ACReference,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,TSO Reference,drs:TSOReference,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Document Issue Date,drs:docIssuedDate,DATE,TRUE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Comments,drs:comments,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook,FIRE_TEST_HANDBOOK,Chapter Number,drs:documentNumber,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Status,drs:status,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Chapter Title,drs:title,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Publications,faagov:revision3FireSafetyPublication,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Service/Office,drs:documentOwner,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,AC Reference,drs:ACReference,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,TSO Reference,drs:TSOReference,ARRAY,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Document Issue Date,drs:docIssuedDate,DATE,TRUE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Comments,drs:comments,TEXT,FALSE
+ANG,Aircraft Materials Fire Test Handbook - Revision 3,FIRE_TEST_HANDBOOK_REVISION3,Chapter Number,drs:documentNumber,TEXT,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Status,drs:status,TEXT,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Title,drs:title,TEXT,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Revision,faagov:jobAidsRevisionNumber,TEXT,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Description,faagov:jobAidsDescription,TEXT,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Order Reference,drs:orderReference,ARRAY,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Effective Date,drs:effectiveDate,DATE,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Comments,drs:comments,TEXT,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AOV,Job Aids (AOV),AOV_JOB_AIDS,Document Number,drs:documentNumber,TEXT,TRUE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Status,drs:status,TEXT,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Title,drs:title,TEXT,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Revision,faagov:socRevisionNumber,TEXT,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Description,faagov:socDescription,TEXT,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Order Reference,drs:orderReference,ARRAY,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Effective Date,drs:effectiveDate,DATE,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Comments,drs:comments,TEXT,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Service/Office,drs:documentOwner,ARRAY,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AOV,Safety Oversight Circulars (SOC),AOV_SAFETY_OVERSIGHT_CIRCULAR,SOC Number,drs:documentNumber,TEXT,TRUE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Status,drs:status,TEXT,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Title,drs:title,TEXT,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Revision,faagov:wiRevisionNumber,TEXT,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Description,faagov:wiDescription,TEXT,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Order Reference,drs:orderReference,ARRAY,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Effective Date,drs:effectiveDate,DATE,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Comments,drs:comments,TEXT,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AOV,Work Instructions (AOV),AOV_WORK_INSTRUCTIONS,Document Number,drs:documentNumber,TEXT,TRUE
+ARM,Exemptions,EXEMPTION,Docket Number,drs:docketNumber,TEXT,FALSE
+ARM,Exemptions,EXEMPTION,Company Name,drs:exemptionCompanyName,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Petitioner Name,drs:exemptionPetitionerName,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Equipment,drs:exemptionEquipmentDesc,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Disposition,drs:exemptionDisposition,TEXT,FALSE
+ARM,Exemptions,EXEMPTION,Service/Office,drs:documentOwner,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Regulation/Title 14 CFR Reference,drs:exemptionRegulationDescription,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,CAR Reference,drs:CARReference,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Exemption Reference,drs:EXReference,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Special Condition Reference,drs:SCFinalReference,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+ARM,Exemptions,EXEMPTION,Expiration Date,drs:exemptionExpireDate,DATE,TRUE
+ARM,Exemptions,EXEMPTION,Effective Date,drs:exemptionEffectiveDate,DATE,FALSE
+ARM,Exemptions,EXEMPTION,Petition Date,drs:exemptionPetitionDate,DATE,FALSE
+ARM,Exemptions,EXEMPTION,Comments,drs:comments,TEXT,FALSE
+ARM,Exemptions,EXEMPTION,Exemption Number,drs:documentNumber,TEXT,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Status,drs:status,TEXT,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Environmental Document Type,faagov:astEnvironmentalType,TEXT,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Vehicle Operator or Company,faagov:astEnvVehicleOperatorCompany,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Vehicle,faagov:astEnvVehicle,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Site,faagov:astEnvSite,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Site Operator or Company,faagov:astEnvSiteOperatorCompany,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Location- State and Country,faagov:astEnvLocation,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Cooperating and Consulting Agencies,faagov:astEnvCooperatingConsulting,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Related Environmental Documents,faagov:astRelatedDoc,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Document Issue Date,faagov:astIssueDate,DATE,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Comments,drs:comments,TEXT,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Sites License Number,faagov:astLaunchSiteLicenseNumber,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Vehicles License Number,faagov:astLaunchVehicleLicenseNumber,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AST,Environmental Supporting Documents,ENVIRONMENTAL_SUPPORTING_DOCUMENTS,Title,drs:title,TEXT,TRUE
+AST,Experimental Permits,PERMITS,Status,drs:status,TEXT,FALSE
+AST,Experimental Permits,PERMITS,Company,faagov:astPermitsCompany,TEXT,FALSE
+AST,Experimental Permits,PERMITS,Vehicle,faagov:astPermitsVehicle,TEXT,FALSE
+AST,Experimental Permits,PERMITS,Location (Spaceport),faagov:astPermitsLocation,ARRAY,FALSE
+AST,Experimental Permits,PERMITS,Revision Number,faagov:astRevisionNumber,TEXT,FALSE
+AST,Experimental Permits,PERMITS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AST,Experimental Permits,PERMITS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AST,Experimental Permits,PERMITS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AST,Experimental Permits,PERMITS,Document Issue Date,faagov:astIssueDate,DATE,FALSE
+AST,Experimental Permits,PERMITS,Document Expiration Date,faagov:astExpirationDate,DATE,FALSE
+AST,Experimental Permits,PERMITS,Comments,drs:comments,TEXT,FALSE
+AST,Experimental Permits,PERMITS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AST,Experimental Permits,PERMITS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AST,Experimental Permits,PERMITS,Permit Number,drs:documentNumber,TEXT,TRUE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Status,drs:status,TEXT,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Revision Number,faagov:astRevisionNumber,TEXT,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Company,faagov:astSafetyCompany,TEXT,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Operator,faagov:astSafetyOperator,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Location,faagov:astSafetyLocation,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,State and Country,faagov:astSafetyStateCountry,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Purpose,faagov:astSafetyPurpose,TEXT,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Document Issue Date,faagov:astIssueDate,DATE,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Document Expiration Date,faagov:astExpirationDate,DATE,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Comments,drs:comments,TEXT,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Service/Office,drs:documentOwner,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AST,Safety Element Approvals,SAFETY_ELEMENT_APPROVALS,Safety Approval Number,drs:documentNumber,TEXT,TRUE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Status,drs:status,TEXT,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Revision Number,faagov:astRevisionNumber,TEXT,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Operator,faagov:astLaunchSOperator,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Location,faagov:astLaunchSLocation,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,State and Country,faagov:astLaunchSStateCountry,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Document Issue Date,faagov:astIssueDate,DATE,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Document Expiration Date,faagov:astExpirationDate,DATE,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Comments,drs:comments,TEXT,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Service/Office,drs:documentOwner,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AST,Sites,LAUNCH_SITE_OPERATOR_LICENSES,License Number,drs:documentNumber,TEXT,TRUE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Status,drs:status,TEXT,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Revision Number,faagov:astRevisionNumber,TEXT,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Company,faagov:astLaunchVCompany,TEXT,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Vehicles,faagov:astLaunchVVehicles,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Location,faagov:astLaunchVLocation,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Document Expiration Date,faagov:astExpirationDate,DATE,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Document Issue Date,faagov:astIssueDate,DATE,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Comments,drs:comments,TEXT,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Service/Office,drs:documentOwner,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+AST,Vehicles,LAUNCH_VEHICLE_OPERATOR_LICENSES,License Number,drs:documentNumber,TEXT,TRUE
+FS,"8900.1, Contents",ORDER_8900.1,Status,drs:status,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Volume Number,fsims:volume,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Volume,fsims:docLevel2,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Chapter Number,fsims:chapter,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Chapter,fsims:docLevel3,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Section,fsims:section,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Title,drs:title,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Service/Office,fsims:owner,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Change Number,fsims:revision,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Document/Revision File Date,fsims:fileDate,DATE,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Comments,drs:comments,TEXT,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,CAR Reference,drs:CARReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Exemption Reference,drs:EXReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Notice Reference,fsims:relatedNotice,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,AIR Policy Reference,drs:airPolicyReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,"8900.1, Contents",ORDER_8900.1,Document Number,drs:documentNumber,TEXT,TRUE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Status,drs:status,TEXT,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Change Number,fsims:revision,TEXT,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Publications,fsims:docLevel2,TEXT,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Title,drs:title,TEXT,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Comments,drs:comments,TEXT,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,AFX Memorandums,AFS-1_MEMORANDUMS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Document Number,drs:documentNumber,,TRUE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Status,drs:status,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Publications,fsims:docLevel2,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Categories,fsims:docLevel3,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Sub-Categories,fsims:docLevel4,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Service/Office,fsims:owner,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Office of Primary Responsibility,fsims:poc,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Title,drs:title,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Issue Date,fsims:fileDate,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Last Reviewed Date,drs:lastReviewedDate,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Area Of Interest,fsims:areasOfInterest,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Job Category/SAS Peer Group,fsims:jobCategory,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,Inspector Specialty,fsims:specialty,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,CFR Part Reference,drs:partNumber,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,CFR Subpart/Appendix Reference,drs:subPart,,FALSE
+FS,Air Transportation Job Task Analysis (Historical AT JTA),AT_JTA,CFR Section Reference,drs:sectionNumber,,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Status,drs:status,TEXT,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Title,drs:title,TEXT,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Aircraft Type,faagov:aircraftType,TEXT,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Aircraft Model,faagov:aircraftModel,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Comments,drs:comments,TEXT,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,Aircraft-Specific Standardized Curriculum,AIRCRAFT_STANDARDIZED_CURRICULUM,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,Status,drs:status,TEXT,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,Docket Number,drs:documentNumber,TEXT,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,Comments,drs:comments,TEXT,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,Aircraft Master Schedule,AIRCRAFT_MASTER_SCHEDULE,Title,drs:title,TEXT,TRUE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Status,drs:status,TEXT,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Change Number,fsims:revision,TEXT,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Title,drs:title,TEXT,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Issue Date,fsims:fileDate,DATE,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Comments,drs:comments,TEXT,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Regulation,fsims:regulation,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Service/Office,fsims:owner,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,All Weather Operations (AWO) Specialists,OTHER_AWO,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Aviation Maintenance Alerts Data,ALERTS,Status,drs:status,TEXT,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Change Number,fsims:revision,TEXT,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Publications,fsims:docLevel2,TEXT,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Title,drs:title,TEXT,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Comments,drs:comments,TEXT,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Aviation Maintenance Alerts Data,ALERTS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Status,drs:status,TEXT,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Change Number,fsims:revision,TEXT,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Title,drs:title,TEXT,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Comments,drs:comments,TEXT,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Awards Information Guides (AIG),OTHER_AWARDS_INFORMATION_GUIDES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Status,drs:status,TEXT,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Editorial Corrections,fsims:docLevel4,TEXT,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Title,drs:title,TEXT,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Comments,drs:comments,TEXT,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Editorial Corrections,8900.1_EDITORIAL_CORRECTIONS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Status,drs:status,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Change Number,fsims:revision,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Publications,fsims:docLevel2,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Categories,fsims:docLevel3,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Title,drs:title,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Comments,drs:comments,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Checklist,OTHER_EFB_CHECKLISTS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Status,drs:status,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Change Number,fsims:revision,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Publications,fsims:docLevel2,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Categories,fsims:docLevel3,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Title,drs:title,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Comments,drs:comments,TEXT,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Electronic Flight Bag (EFB) Research Reports,OTHER_EFB_RESEARCH_REPORTS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Status,drs:status,TEXT,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Change Number,fsims:revision,TEXT,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Title,drs:title,TEXT,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Issue Date,fsims:fileDate,DATE,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Comments,drs:comments,TEXT,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Regulation,fsims:regulation,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Service/Office,fsims:owner,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,FAA 90-Day Safety Review,OTHER_FAA_90_DAY_SAFETY_REVIEW,Document Number,drs:documentNumber,TEXT,TRUE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Status,drs:status,TEXT,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Change Number,fsims:revision,TEXT,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Title,drs:title,TEXT,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Issue Date,fsims:fileDate,DATE,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Comments,drs:comments,TEXT,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Regulation,fsims:regulation,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Service/Office,fsims:owner,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,FAA Air Carrier Certification Process Certification Process Document (CPD) 6.03,OTHER_CPD_6.03,Document Number,drs:documentNumber,TEXT,TRUE
+FS,FFS Updates,AFS_FFS_UPDATES,Status,drs:status,TEXT,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Change Number,fsims:revision,TEXT,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Title,drs:title,TEXT,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Comments,drs:comments,TEXT,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,FFS Updates,AFS_FFS_UPDATES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Status,drs:status,TEXT,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Title,drs:title,TEXT,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Expiration Date,fsims:expirationDate,DATE,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Comments,drs:comments,TEXT,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Flight Operations Evaluation Board (FOEB) Announcements,FOEB,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Status,drs:status,TEXT,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Title,drs:title,TEXT,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Aircraft Type,fsims:docLevel2,TEXT,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Manufacturer Name,fsims:docLevel3,TEXT,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Comments,drs:comments,TEXT,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,AD Reference,drs:ADReference,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Exemption Reference,drs:EXReference,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Flight Standardization Board Reports (FSBR),FSB_REPORTS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Status,drs:status,TEXT,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Change Number,fsims:revision,TEXT,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Publications,fsims:docLevel2,TEXT,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Categories,fsims:docLevel3,TEXT,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Title,drs:title,TEXT,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Comments,drs:comments,TEXT,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Flight Standards (FS) QMS Processes,OTHER_QMS_AND_BP,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Status,drs:status,TEXT,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Change Number,fsims:revision,TEXT,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Title,drs:title,TEXT,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Policy Type,fsims:policyType,TEXT,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Order Number,fsims:orderNumber,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Comments,drs:comments,TEXT,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Flight Standards Policy Deviation Memorandums,AFS_POLICY_DEV_MEMOS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Status,drs:status,TEXT,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Change Number,fsims:revision,TEXT,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Title,drs:title,TEXT,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Comments,drs:comments,TEXT,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Flight Standards Preflight Operational Risk Matrix (ORM) Worksheets,OTHER_FLIGHT_STANDARDS_ORM_WORKSHEETS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Status,drs:status,TEXT,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Change Number,fsims:revision,TEXT,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Title,drs:title,TEXT,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Comments,drs:comments,TEXT,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Focus Teams,AFS_FOCUS_TEAMS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Status,drs:status,TEXT,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Sub-Status,drs:oldStatus,TEXT,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Policy Type,fsims:policyType,TEXT,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Canceled By,fsims:fsPolicyCanceledBy,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Order Reference,drs:orderReference,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Effective Date,drs:effectiveDate,DATE,TRUE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Canceled Date,fsims:fsPolicyCanceledDate,DATE,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Comments,drs:comments,TEXT,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"FS Policy Statements, Memos and Deviations",FS_POLICY,Title,drs:title,TEXT,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Status,drs:status,TEXT,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Change Number,fsims:revision,TEXT,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Title,drs:title,TEXT,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Authored Title,fsims:authoredTitle,TEXT,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Comments,drs:comments,TEXT,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Future of Flight Standards (FFS) UpdatePub,AFS_FFS_UPDATEPUB,Document Number,drs:documentNumber,TEXT,TRUE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Document Number,drs:documentNumber,,TRUE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Status,drs:status,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Publications,fsims:docLevel2,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Categories,fsims:docLevel3,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Sub-Categories,fsims:docLevel4,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Service/Office,fsims:owner,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Office of Primary Responsibility,fsims:poc,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Title,drs:title,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Issue Date,fsims:fileDate,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Last Reviewed Date,drs:lastReviewedDate,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Area Of Interest,fsims:areasOfInterest,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Job Category/SAS Peer Group,fsims:jobCategory,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,Inspector Specialty,fsims:specialty,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,CFR Part Reference,drs:partNumber,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,CFR Subpart/Appendix Reference,drs:subPart,,FALSE
+FS,General Aviation Job Task Analysis (Historical GA JTA),GA_JTA,CFR Section Reference,drs:sectionNumber,,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Status,drs:status,TEXT,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Change Number,fsims:revision,TEXT,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Publications,fsims:docLevel2,TEXT,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Categories,fsims:docLevel3,TEXT,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Title,drs:title,TEXT,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Comments,drs:comments,TEXT,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,"Handbook, Information and Policy Subsystem Bulletins",BULLETINS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Status,drs:status,TEXT,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Change Number,fsims:revision,TEXT,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Title,drs:title,TEXT,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Comments,drs:comments,TEXT,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Inactive Legal Interpretations,OTHER_PS_LEGAL_INTERPRETATIONS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Information for Operators (InFO),INFO,Status,drs:status,TEXT,FALSE
+FS,Information for Operators (InFO),INFO,Subject,drs:title,TEXT,FALSE
+FS,Information for Operators (InFO),INFO,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Information for Operators (InFO),INFO,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+FS,Information for Operators (InFO),INFO,Comments,drs:comments,TEXT,FALSE
+FS,Information for Operators (InFO),INFO,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,AD Reference,drs:ADReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Exemption Reference,drs:EXReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,SAIB Reference,drs:SAIBReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,STC Reference,drs:STCReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,TCDS Reference,drs:TCDSReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,USC Reference,drs:USCReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,Information for Operators (InFO),INFO,InFO Number,drs:documentNumber,TEXT,TRUE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Status,drs:status,TEXT,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Change Number,fsims:revision,TEXT,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Title,drs:title,TEXT,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Comments,drs:comments,TEXT,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Information Guides,OTHER_INFORMATION_GUIDES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Status,drs:status,TEXT,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Docket Number,drs:documentNumber,TEXT,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Document Issue Date,drs:docIssuedDate,DATE,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Comments Close Date,faagov:commentsCloseDate,DATE,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Comments,drs:comments,TEXT,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,Instructor/Check Pilot Qualification Curriculum,PILOT_QUALIFICATION_CURRICULUM,Title,drs:title,TEXT,TRUE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Status,drs:status,TEXT,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Change Number,fsims:revision,TEXT,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Title,drs:title,TEXT,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Comments,drs:comments,TEXT,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,International Agreements,OTHER_INTERNATIONAL_PUBLICATIONS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Job Aids,OTHER_JOB_AIDS,Status,drs:status,TEXT,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Change Number,fsims:revision,TEXT,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Title,drs:title,TEXT,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Comments,drs:comments,TEXT,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,AVS Policy Reference,drs:avsPolicyReference,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Job Aids,OTHER_JOB_AIDS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Job Tasks (JT),JOB_TASKS,Status,drs:status,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Title,drs:title,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Business Area,faagov:jobTasksCategory,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Applicability/Technical Discipline,faagov:jobTasksSpecialty,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Training Method,faagov:jobTasksTrainingMethod,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Associated Training Course,faagov:jobTasksTrainingCourses,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Criticality,faagov:jobTasksCriticality,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Difficulty,faagov:jobTasksDifficulty,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Frequency,faagov:jobTasksFrequency,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Historical Job Task Analysis (JTA) or Job Task (JT),faagov:jobTasksSupersededJTANumbers,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Airport AC Reference,drs:airportAcReference,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Issue Date,faagov:jobTasksIssueDate,DATE,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Notes,drs:comments,TEXT,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,Job Tasks (JT),JOB_TASKS,Job Task Number,drs:documentNumber,TEXT,TRUE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Status,drs:status,TEXT,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Change Number,fsims:revision,TEXT,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Title,drs:title,TEXT,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Comments,drs:comments,TEXT,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Laser Investigation References,OTHER_LASER_INVESTIGATION_REFERENCES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Status,drs:status,TEXT,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Title,drs:title,TEXT,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,ATA/JASC Chapter,fsims:ataChapter,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Comments,drs:comments,TEXT,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Master Minimum Equipment List Policy Letters (MMEL PL),MMEL_POLICY_LETTERS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Status,drs:status,TEXT,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Title,drs:title,TEXT,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Type,fsims:docLevel3,TEXT,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Manufacturer,fsims:docLevel4,TEXT,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Model,fsims:authoredTitle,TEXT,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Comments,drs:comments,TEXT,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Master Minimum Equipment Lists (MMEL),MMEL,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Notices,NOTICES,Status,drs:status,TEXT,FALSE
+FS,Notices,NOTICES,Title,drs:title,TEXT,FALSE
+FS,Notices,NOTICES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Notices,NOTICES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Notices,NOTICES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Notices,NOTICES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Notices,NOTICES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Notices,NOTICES,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Notices,NOTICES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Notices,NOTICES,Expiration Date,fsims:expirationDate,DATE,FALSE
+FS,Notices,NOTICES,Comments,drs:comments,TEXT,FALSE
+FS,Notices,NOTICES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Notices,NOTICES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Notices,NOTICES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Notices,NOTICES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Notices,NOTICES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Notices,NOTICES,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Notices,NOTICES,CAR Reference,drs:CARReference,ARRAY,FALSE
+FS,Notices,NOTICES,AD Reference,drs:ADReference,ARRAY,FALSE
+FS,Notices,NOTICES,Exemption Reference,drs:EXReference,ARRAY,FALSE
+FS,Notices,NOTICES,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Notices,NOTICES,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Notices,NOTICES,Other Order Reference,fsims:relatedOrder,ARRAY,FALSE
+FS,Notices,NOTICES,Notice Reference,fsims:relatedNotice,ARRAY,FALSE
+FS,Notices,NOTICES,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Notices,NOTICES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Operational Suitability Reports (OSR),OSR,Status,drs:status,TEXT,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Title,drs:title,TEXT,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Aircraft Type,fsims:docLevel2,TEXT,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Manufacturer Name,fsims:docLevel3,TEXT,FALSE
+FS,Operational Suitability Reports (OSR),OSR,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Comments,drs:comments,TEXT,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Operational Suitability Reports (OSR),OSR,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Status,drs:status,TEXT,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Change Number,fsims:revision,TEXT,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Title,drs:title,TEXT,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Comments,drs:comments,TEXT,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Operations Safety System (OPSS) Documents,OPSS_GUIDANCE,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Operations Specification Working Group (OSWG),OSWG,Status,drs:status,TEXT,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Change Number,fsims:revision,TEXT,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Publications,fsims:docLevel2,TEXT,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Categories,fsims:docLevel3,TEXT,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Title,drs:title,TEXT,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Comments,drs:comments,TEXT,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Operations Specification Working Group (OSWG),OSWG,Document Number,drs:documentNumber,TEXT,TRUE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Status,drs:status,TEXT,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Change Number,fsims:revision,TEXT,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Categories,fsims:docLevel3,TEXT,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Title,drs:title,TEXT,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Issue Date,fsims:fileDate,DATE,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Comments,drs:comments,TEXT,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Service/Office,fsims:owner,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,"Order 8300.10, Airworthiness Inspector’s Handbook",ORDER_8300.10,Document Number,drs:documentNumber,TEXT,TRUE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Status,drs:status,TEXT,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Change Number,fsims:revision,TEXT,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Categories,fsims:docLevel3,TEXT,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Title,drs:title,TEXT,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Issue Date,fsims:fileDate,DATE,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Comments,drs:comments,TEXT,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Service/Office,fsims:owner,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,"Order 8400.10, Air Transportation Operations Inspectors Handbook",ORDER_8400.10,Document Number,drs:documentNumber,TEXT,TRUE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Status,drs:status,TEXT,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Change Number,fsims:revision,TEXT,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Categories,fsims:docLevel3,TEXT,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Title,drs:title,TEXT,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Issue Date,fsims:fileDate,DATE,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Comments,drs:comments,TEXT,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Service/Office,fsims:owner,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,"Order 8700.1, General Aviation Safety Inspectors Handbook",ORDER_8700.1,Document Number,drs:documentNumber,TEXT,TRUE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Status,drs:status,TEXT,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Change Number,fsims:revision,TEXT,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Title,drs:title,TEXT,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Issue Date,fsims:fileDate,DATE,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Comments,drs:comments,TEXT,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Regulation,fsims:regulation,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Service/Office,fsims:owner,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,"Order 8740.1, FAA Safety Team Program Manager’s Handbook",ORDER_8740.1,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Orders,ORDERS,Status,drs:status,TEXT,FALSE
+FS,Orders,ORDERS,Title,drs:title,TEXT,FALSE
+FS,Orders,ORDERS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Orders,ORDERS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Orders,ORDERS,Cancels,fsims:ordersCancels,ARRAY,FALSE
+FS,Orders,ORDERS,Canceled By,fsims:ordersCanceledBy,TEXT,FALSE
+FS,Orders,ORDERS,Change,fsims:ordersChange,TEXT,FALSE
+FS,Orders,ORDERS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Orders,ORDERS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Orders,ORDERS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Orders,ORDERS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Orders,ORDERS,Effective Date,drs:effectiveDate,DATE,TRUE
+FS,Orders,ORDERS,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,Orders,ORDERS,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+FS,Orders,ORDERS,Comments,drs:comments,TEXT,FALSE
+FS,Orders,ORDERS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Orders,ORDERS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Orders,ORDERS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Orders,ORDERS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Orders,ORDERS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Orders,ORDERS,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Orders,ORDERS,CAR Reference,drs:CARReference,ARRAY,FALSE
+FS,Orders,ORDERS,Exemption Reference,drs:EXReference,ARRAY,FALSE
+FS,Orders,ORDERS,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Orders,ORDERS,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Orders,ORDERS,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Orders,ORDERS,Notice Reference,fsims:relatedNotice,ARRAY,FALSE
+FS,Orders,ORDERS,AIR Policy Reference,fsims:ordersPolicyNumber,ARRAY,FALSE
+FS,Orders,ORDERS,AVS Policy Reference,fsims:ordersAvsPolicyNumber,ARRAY,FALSE
+FS,Orders,ORDERS,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Orders,ORDERS,Document Number,drs:documentNumber,TEXT,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Status,drs:status,TEXT,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Change Number,fsims:revision,TEXT,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Title,drs:title,TEXT,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Comments,drs:comments,TEXT,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Part 129 Operations Specification (OpSpec) Job Aids,PART_129_OPSPEC_JA,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Document Number,drs:documentNumber,,TRUE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Status,drs:status,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Service/Office,fsims:owner,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Office of Primary Responsibility,fsims:poc,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Title,drs:title,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Issue Date,fsims:fileDate,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Area Of Interest,fsims:areasOfInterest,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Job Category/SAS Peer Group,fsims:jobCategory,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Inspector Specialty,fsims:specialty,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,Revision Date,fsims:revisionDate,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,CFR Part Reference,drs:partNumber,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,CFR Subpart/Appendix Reference,drs:subPart,,FALSE
+FS,Program Tracking and Reporting Subsystem (PTRS) Procedures Manual (PPM),OTHER_PROCEDURES_MANUAL,CFR Section Reference,drs:sectionNumber,,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Status,drs:status,TEXT,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Change Number,fsims:revision,TEXT,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Publications,fsims:docLevel2,TEXT,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Categories,fsims:docLevel3,TEXT,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Title,drs:title,TEXT,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Comments,drs:comments,TEXT,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,PS Federal Aviation Acts Data,OTHER_PS_FEDERAL_AVIATION_ACTS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Status,drs:status,TEXT,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Change Number,fsims:revision,TEXT,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Title,drs:title,TEXT,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Issue Date,fsims:fileDate,DATE,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Comments,drs:comments,TEXT,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Regulation,fsims:regulation,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Service/Office,fsims:owner,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,PS Policy Memoranda,OTHER_PS_POLICY_MEMORANDA,Document Number,drs:documentNumber,TEXT,TRUE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Status,drs:status,TEXT,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Change Number,fsims:revision,TEXT,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Title,drs:title,TEXT,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Comments,drs:comments,TEXT,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,PS Preambles,OTHER_PS_PREAMBLES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Status,drs:status,TEXT,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Change Number,fsims:revision,TEXT,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Title,drs:title,TEXT,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Comments,drs:comments,TEXT,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Regulatory Consistency Communication Board (RCCB) Determinations,OTHER_RCCB,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Status,drs:status,TEXT,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Change Number,fsims:revision,TEXT,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Title,drs:title,TEXT,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Comments,drs:comments,TEXT,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Runway Incursion Remedial Training Program (RIRTP),OTHER_RIRTP,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Safety Alerts for Operators (SAFO),SAFO,Status,drs:status,TEXT,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Subject,drs:title,TEXT,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,AD Reference,drs:ADReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Exemption Reference,drs:EXReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Notice Reference,drs:noticeReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,SAIB Reference,drs:SAIBReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,STC Reference,drs:STCReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,TCDS Reference,drs:TCDSReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Title 49 CFR Reference,drs:title49Reference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Last Reviewed Date,drs:lastReviewedDate,DATE,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Comments,drs:comments,TEXT,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Service/Office,drs:documentOwner,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,Office of Primary Responsibility,drs:primaryRespOffice,ARRAY,FALSE
+FS,Safety Alerts for Operators (SAFO),SAFO,SAFO Number,drs:documentNumber,TEXT,TRUE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Status,drs:status,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,DCT Title,drs:title,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,System/Custom DCT,fsims:docLevel2,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Sub-system,fsims:docLevel3,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Element,fsims:docLevel4,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,DCT Revision,fsims:revision,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Revision Date,fsims:revisionDate,DATE,TRUE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Comments,drs:comments,TEXT,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Regulation,fsims:regulation,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Service/Office,fsims:owner,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,SAS AXH Data Collection Tool (DCT),SAS_AXH_DCT,Document Number,drs:documentNumber,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Status,drs:status,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,DCT Title,drs:title,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,System/Custom DCT,fsims:docLevel2,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Sub-system,fsims:docLevel3,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Element,fsims:docLevel4,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,DCT Revision,fsims:revision,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Revision Date,fsims:revisionDate,DATE,TRUE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Comments,drs:comments,TEXT,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Regulation,fsims:regulation,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Service/Office,fsims:owner,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,SAS FS Data Collection Tool (DCT),SAS_DCT,Document Number,drs:documentNumber,TEXT,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Status,drs:status,TEXT,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Title,drs:title,TEXT,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Issue Date,fsims:fileDate,DATE,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Comments,drs:comments,TEXT,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Regulation,fsims:regulation,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Service/Office,fsims:owner,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,AD Reference,drs:ADReference,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,STC Relief Approval Letters,STCRELIEFAPPLETTER,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Status,drs:status,TEXT,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Change Number,fsims:revision,TEXT,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Summary of Changes,fsims:docLevel4,TEXT,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Title,drs:title,TEXT,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Document Published Date,drs:docPublishedDate,DATE,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Comments,drs:comments,TEXT,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,SFAR Reference,drs:SFARReference,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,AC Reference,drs:ACReference,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,8900.1 Reference,drs:8900Reference,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Other Order Reference,drs:otherOrderReference,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Notice Reference,fsims:relatedNotice,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Additional Reference,drs:additionalReference,ARRAY,FALSE
+FS,Summary of Changes,8900.1_SUMMARY_OF_CHANGES,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Status,drs:status,TEXT,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Change Number,fsims:revision,TEXT,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Title,drs:title,TEXT,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Comments,drs:comments,TEXT,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Supplemental Passenger Restraint Systems (SPRS),OTHER_SPRS,Document Number,drs:documentNumber,TEXT,TRUE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Status,drs:status,TEXT,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Change Number,fsims:revision,TEXT,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Title,drs:title,TEXT,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,CFR Part Reference,drs:partNumber,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,CFR Subpart/Appendix Reference,drs:subPart,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,CFR Section Reference,drs:sectionNumber,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Issue Date,fsims:fileDate,DATE,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Revision Date,fsims:revisionDate,DATE,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Comments,drs:comments,TEXT,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Library Subject,fsims:librarySubject,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Area Of Interest,fsims:areasOfInterest,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Regulation,fsims:regulation,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Job Category/SAS Peer Group,fsims:jobCategory,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Inspector Specialty,fsims:specialty,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Service/Office,fsims:owner,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Office of Primary Responsibility,fsims:poc,ARRAY,FALSE
+FS,Vital Information Subsystem Procedures Manual (VPM),OTHER_VPM,Document Number,drs:documentNumber,TEXT,TRUE
+OTHER,ICAO - Other Publications,ICAO_OTHER_PUBLICATIONS,Edition,faagov:icaoOtherEdition,TEXT,FALSE
+OTHER,ICAO - Other Publications,ICAO_OTHER_PUBLICATIONS,Publication Date,faagov:icaoOtherPublicationDate,DATE,TRUE
+OTHER,ICAO - Other Publications,ICAO_OTHER_PUBLICATIONS,Comments,drs:comments,TEXT,FALSE
+OTHER,ICAO - Other Publications,ICAO_OTHER_PUBLICATIONS,Title,drs:title,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Title,drs:title,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Edition,faagov:icaoAnnexEdition,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Amendment,faagov:icaoAnnexAmendment,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Part-Volume Number,faagov:icaoAnnexPartVolumeNumber,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Amendment Incorporated,faagov:icaoAnnexAmendmentIncorporated,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Effective Date,faagov:icaoAnnexEffectiveDate,DATE,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Publication Date,faagov:icaoAnnexPublicationDate,DATE,TRUE
+OTHER,ICAO Annexes,ICAO_ANNEX,Applicability Date,faagov:icaoAnnexApplicabilityDate,DATE,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Comments,drs:comments,TEXT,FALSE
+OTHER,ICAO Annexes,ICAO_ANNEX,Annex Number,drs:documentNumber,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Title,drs:title,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Edition,faagov:icaoDocumentEdition,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Amendment,faagov:icaoDocumentAmendment,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Part Number,faagov:icaoDocumentPartNumber,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Volume,faagov:icaoDocumentVolume,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Additional Identifier,faagov:icaoDocumentAdditionalIdentifier,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Publication Date,faagov:icaoDocumentPublicationDate,DATE,TRUE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Approved Date,faagov:icaoDocumentApprovedDate,DATE,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Comments,drs:comments,TEXT,FALSE
+OTHER,ICAO Documents,ICAO_DOCUMENT,Document Number,drs:documentNumber,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Title,drs:title,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Edition,faagov:icaoPansEdition,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Previous Edition,faagov:icaoPansPreviousEdition,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Volume,faagov:icaoPansVolume,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Volume Title,faagov:icaoPansVolumeTitle,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Amendment,faagov:icaoPansAmendment,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Published Year,faagov:icaoPansPublishedYear,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Applicability Date,faagov:icaoPansApplicabilityDate,DATE,TRUE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Date Approved by Council,faagov:icaoPansApprovedDate,DATE,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Comments,drs:comments,TEXT,FALSE
+OTHER,ICAO Procedures for Air Navigation Services (PANS),ICAO_PANS,Document Number,drs:documentNumber,TEXT,FALSE

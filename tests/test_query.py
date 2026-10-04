@@ -1,0 +1,161 @@
+from __future__ import annotations
+
+from datetime import UTC, date, datetime, timedelta, timezone
+from typing import Any
+
+import pytest
+
+from faa_drs import DocType, InvalidQueryError, SortOrder
+from faa_drs._query import build_query
+
+
+def test_plain_query_uses_get() -> None:
+    method, path, kwargs = build_query(DocType.AC, offset=750).request_args()
+    assert (method, path) == ("GET", "/AC")
+    assert kwargs == {"params": {"offset": 750}}
+
+
+def test_get_params_use_api_names() -> None:
+    query = build_query("AC", modified_after=date(2025, 1, 2), sort="desc")
+    _, _, kwargs = query.request_args()
+    assert kwargs["params"] == {
+        "offset": 0,
+        "docLastModifiedDate": "2025-01-02T00:00:00.000Z",
+        "docLastModifiedDateSortOrder": "DESC",
+    }
+
+
+def test_filtered_query_uses_post_with_api_names() -> None:
+    query = build_query(
+        "PMA",
+        offset=10,
+        modified_after="2021-12-21T14:04:31.062Z",
+        sort=SortOrder.ASC,
+        filters={"drs:status": ["Current", "Historical"], "drs:pmaNumber": "PQ04418CE"},
+    )
+    method, path, kwargs = query.request_args()
+    assert (method, path) == ("POST", "/PMA/filtered")
+    assert kwargs["json"] == {
+        "offset": 10,
+        "docLastModifiedDate": "2021-12-21T14:04:31.062Z",
+        "sortOrder": "ASC",
+        "documentFilters": {
+            "drs:status": ["Current", "Historical"],
+            "drs:pmaNumber": ["PQ04418CE"],
+        },
+    }
+
+
+def test_doctype_is_url_quoted() -> None:
+    assert build_query("ORDER_8900.1").request_args()[1] == "/ORDER_8900.1"
+    assert build_query("A/B").request_args()[1] == "/A%2FB"
+
+
+@pytest.mark.parametrize(
+    ("value", "expected"),
+    [
+        (datetime(2025, 5, 9, 14, 38, 11, 964000, tzinfo=UTC), "2025-05-09T14:38:11.964Z"),
+        (datetime(2025, 5, 9, 14, 38, 11), "2025-05-09T14:38:11.000Z"),  # noqa: DTZ001
+        (
+            datetime(2025, 5, 9, 10, 0, tzinfo=timezone(timedelta(hours=-4))),
+            "2025-05-09T14:00:00.000Z",
+        ),
+        ("2025-05-09T14:38:11.964Z", "2025-05-09T14:38:11.964Z"),
+        (date(2025, 5, 9), "2025-05-09T00:00:00.000Z"),
+    ],
+)
+def test_modified_after_is_utc_millis(value: Any, expected: str) -> None:
+    assert build_query("AC", modified_after=value).modified_after_param == expected
+
+
+def test_date_filter_accepts_pairs_of_dates_or_strings() -> None:
+    query = build_query("PMA", filters={"drs:pmaSupDate": (date(2020, 1, 1), "2025-07-31")})
+    assert query.filters == {"drs:pmaSupDate": ["2020-01-01", "2025-07-31"]}
+
+
+@pytest.mark.parametrize(
+    ("value", "message"),
+    [
+        ("2020-01-01", "pair"),
+        (date(2020, 1, 1), "pair"),
+        (["2020-01-01"], "exactly 2"),
+        (["2020-01-01", "not-a-date"], "not a YYYY-MM-DD"),
+        (["2025-01-01", "2020-01-01"], "after end"),
+    ],
+)
+def test_date_filter_errors(value: Any, message: str) -> None:
+    with pytest.raises(InvalidQueryError, match=message):
+        build_query("PMA", filters={"drs:pmaSupDate": value})
+
+
+def test_unknown_filter_suggests_close_match() -> None:
+    with pytest.raises(InvalidQueryError, match="Did you mean: drs:saibIssueDate"):
+        build_query("SAIB", filters={"drs:saibIssuDate": "x"})
+
+
+def test_unknown_doctype_skips_local_field_validation() -> None:
+    query = build_query("NEW_TYPE", filters={"anything": "x"})
+    assert query.filters == {"anything": ["x"]}
+
+
+def test_values_are_stripped_deduped_and_empties_dropped() -> None:
+    filters: Any = {"drs:status": [" Current ", "Current", "", None], "drs:saibMake": []}
+    query = build_query("SAIB", filters=filters)
+    assert query.filters == {"drs:status": ["Current"]}
+    assert not build_query("SAIB", filters={"drs:status": "  "}).is_filtered
+
+
+def test_keywords_become_keyword_filter() -> None:
+    query = build_query("SAIB", keywords="corrosion")
+    assert query.filters == {"Keyword": ["corrosion"]}
+    merged = build_query("SAIB", filters={"Keyword": ["a"]}, keywords=["b", "a"])
+    assert merged.filters == {"Keyword": ["a", "b"]}
+
+
+def test_max_five_filters_including_keywords() -> None:
+    filters = {
+        "drs:status": "Current",
+        "drs:saibMake": "Boeing",
+        "drs:saibModel": "737",
+        "drs:productType": "Aircraft",
+        "drs:productSubType": "Large Airplane",
+    }
+    build_query("SAIB", filters=filters)
+    with pytest.raises(InvalidQueryError, match="at most 5 filters"):
+        build_query("SAIB", filters=filters, keywords="fuel")
+
+
+def test_max_ten_values_per_filter() -> None:
+    build_query("SAIB", keywords=[f"k{i}" for i in range(10)])
+    with pytest.raises(InvalidQueryError, match="at most 10"):
+        build_query("SAIB", keywords=[f"k{i}" for i in range(11)])
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "message"),
+    [
+        ({"offset": -1}, "offset"),
+        ({"sort": "sideways"}, "sort"),
+        ({"modified_after": "yesterday"}, "modified_after"),
+    ],
+)
+def test_invalid_arguments(kwargs: dict, message: str) -> None:
+    with pytest.raises(InvalidQueryError, match=message):
+        build_query("AC", **kwargs)
+
+
+def test_non_string_filter_values_are_rejected() -> None:
+    with pytest.raises(InvalidQueryError, match="must be strings"):
+        build_query("SAIB", filters=_any({"drs:status": [1]}))
+    with pytest.raises(InvalidQueryError, match="not a date field"):
+        build_query("SAIB", filters={"drs:status": date(2020, 1, 1)})
+    with pytest.raises(InvalidQueryError, match="string or a list"):
+        build_query("SAIB", filters=_any({"drs:status": 5}))
+
+
+def test_invalid_query_error_is_value_error() -> None:
+    assert issubclass(InvalidQueryError, ValueError)
+
+
+def _any(value: Any) -> Any:
+    return value

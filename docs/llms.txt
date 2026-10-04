@@ -1,0 +1,25 @@
+# faa-drs
+
+> Python SDK for the FAA Dynamic Regulatory System (DRS) API. Install with `pip install faa-drs`. Import as `faa_drs`. Requires Python 3.11+ and a DRS API key in the `DRS_API_KEY` environment variable.
+
+Key facts:
+
+- Clients: `DRSClient` (sync) and `AsyncDRSClient` (async). Same methods. Use as context managers.
+- Methods: `list_documents(doctype, offset=, modified_after=, sort=, filters=, keywords=) -> Page`, `iter_pages(...)`, `iter_documents(..., limit=)`, `get_attachments(doc)`, `download(doc_or_attachment) -> bytes`, `download_to(doc_or_attachment, path_or_dir) -> Path`.
+- Document type codes: `DocType` enum (for example `DocType.AC`, `DocType.SAIB`, `DocType.ADFRAWD`, `DocType.FAR`). Plain strings also work.
+- Field names differ per document type. Find them with `faa_drs.catalog.get_doctype(code).fields`.
+- Filters: `{"drs:status": ["Current"], "<date field>": (start, end)}`. Max 5 filters (keywords count as one), max 10 values each.
+- `Document` attributes: `guid`, `doctype`, `number`, `title`, `status`, `last_modified`, `url`, `download_url`, `file_name`, `has_attachments`, `content`, `metadata`.
+- `doc.content` has inline full text for ADFRAWD, ADNPRM, CFRFRSFAR, FAR, NPRM, SCFINAL, SCPROPOSED, SFAR. Other types publish text as files (usually PDF). The SDK does not parse PDFs.
+- Errors subclass `DRSError`. Some API errors arrive with HTTP 200; the SDK raises them anyway.
+
+## Docs
+
+- [Get started](https://cldixon.github.io/faa-drs/get-started/)
+- [Get documents](https://cldixon.github.io/faa-drs/guides/documents/)
+- [Filter and search](https://cldixon.github.io/faa-drs/guides/filters/)
+- [Text and files](https://cldixon.github.io/faa-drs/guides/files/)
+- [Sync updates](https://cldixon.github.io/faa-drs/guides/sync/)
+- [Errors and retries](https://cldixon.github.io/faa-drs/guides/errors/)
+- [Document types](https://cldixon.github.io/faa-drs/reference/doctypes/)
+- [API reference](https://cldixon.github.io/faa-drs/reference/api/)
