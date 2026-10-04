@@ -1,11 +1,15 @@
 from __future__ import annotations
 
 import logging
+import math
 import os
 import random
 import re
+import secrets
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from email.message import Message
+from email.utils import parsedate_to_datetime
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, TypeAlias, TypeVar
@@ -121,9 +125,13 @@ def resolve_file_id(source: FileSource) -> str:
         file_id = source.file_id
     elif isinstance(source, Attachment):
         file_id = source.file_id
-    else:
+    elif isinstance(source, str):
         file_id = file_id_from_url(source) if "/" in source else source.strip()
-    if not _FILE_ID.match(file_id):
+    else:
+        raise TypeError(
+            f"Expected a Document, Attachment, URL or file id. Got {type(source).__name__}."
+        )
+    if not _FILE_ID.fullmatch(file_id):
         raise DRSError(f"Invalid file id: {file_id!r}")
     return file_id
 
@@ -133,7 +141,24 @@ def default_file_name(source: FileSource, response: httpx.Response, file_id: str
         name = source.file_name
     else:
         name = _content_disposition_name(response) or file_id
-    return Path(name.replace("\\", "/")).name or file_id
+    name = Path(name.replace("\\", "/")).name
+    return name if name not in {"", ".", ".."} else file_id
+
+
+def download_target(
+    dest: str | os.PathLike[str], source: FileSource, response: httpx.Response, file_id: str
+) -> tuple[Path, Path]:
+    """Return `(target, part)` for a download and create the parent directory.
+
+    `dest` is a directory if it exists as one or ends with a path separator. `part` is a
+    unique temporary file next to the target, so concurrent downloads do not collide.
+    """
+    raw = os.fspath(dest)
+    path = Path(raw)
+    if path.is_dir() or raw.endswith(("/", os.sep)):
+        path /= default_file_name(source, response, file_id)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return path, path.with_name(f".{path.name}.{secrets.token_hex(4)}.part")
 
 
 def _content_disposition_name(response: httpx.Response) -> str | None:
@@ -165,10 +190,11 @@ def error_for(response: httpx.Response, body: Any = None) -> APIError | None:  #
     """
     status = response.status_code
     message = body.get("errorMessage") if isinstance(body, dict) else None
+    message = str(message) if message else None
     if status < 400 and not message:
         return None
     text = message or _error_text(response) or response.reason_phrase or "Request failed"
-    if status == 403:
+    if status in {401, 403}:
         return AuthenticationError(
             message or "Access denied. Check the API key.", status_code=status, response=response
         )
@@ -235,6 +261,16 @@ def validate(model: type[M], data: Any) -> M:
         ) from exc
 
 
+def add_field_hint(error: BadRequestError, query: Query) -> None:
+    """Name the filter fields that the catalog does not have. The API error does not."""
+    if query.unknown_fields:
+        error.message += (
+            f" These filter fields are not in the catalog for {query.doctype}: "
+            f"{', '.join(query.unknown_fields)}."
+        )
+        error.args = (error.message,)
+
+
 def parse_page(response: httpx.Response) -> Page:
     return validate(Page, parse_json(response))
 
@@ -248,13 +284,21 @@ def parse_attachments(response: httpx.Response) -> list[Attachment]:
 
 
 def retry_after(response: httpx.Response | None) -> float | None:
-    if response is None:
+    """Return the `Retry-After` delay in seconds. The header is seconds or an HTTP date."""
+    value = response.headers.get("retry-after") if response is not None else None
+    if not value:
         return None
-    value = response.headers.get("retry-after")
     try:
-        return max(float(value), 0.0) if value is not None else None
+        seconds = float(value)
     except ValueError:
-        return None
+        try:
+            when = parsedate_to_datetime(value)
+        except (TypeError, ValueError):
+            return None
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=UTC)
+        seconds = (when - datetime.now(UTC)).total_seconds()
+    return max(seconds, 0.0) if math.isfinite(seconds) else None
 
 
 def is_retryable(exc: Exception) -> bool:
@@ -278,9 +322,27 @@ MAX_REDIRECTS = 5
 
 
 def redirect_request(settings: Settings, response: httpx.Response) -> httpx.Request:
-    """Build the next request for a redirect. The API key is kept only on the same origin."""
-    url = response.request.url.join(response.headers["location"])
+    """Build the next request for a redirect. The API key is kept only on the same origin.
+
+    307 and 308 keep the method and body. Other redirects become a `GET` without a body.
+    """
+    request = response.request
+    url = request.url.join(response.headers["location"])
     base = httpx.URL(settings.base_url)
     same_origin = (url.scheme, url.host, url.port) == (base.scheme, base.host, base.port)
     headers = settings.headers if same_origin else {"user-agent": USER_AGENT}
+    if response.status_code in {307, 308} and request.method != "GET":
+        content_type = request.headers.get("content-type")
+        if content_type:
+            headers = {**headers, "content-type": content_type}
+        return httpx.Request(request.method, url, headers=headers, content=request.content)
     return httpx.Request("GET", url, headers=headers)
+
+
+def too_many_redirects(response: httpx.Response) -> APIError:
+    return APIError(
+        f"Stopped after {MAX_REDIRECTS} redirects. Last location: "
+        f"{response.headers.get('location')}",
+        status_code=response.status_code,
+        response=response,
+    )

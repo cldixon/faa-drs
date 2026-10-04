@@ -16,8 +16,9 @@ from faa_drs._base import (
     MAX_REDIRECTS,
     FileSource,
     Settings,
+    add_field_hint,
     check_status,
-    default_file_name,
+    download_target,
     is_retryable,
     log_retry,
     map_transport_error,
@@ -26,8 +27,9 @@ from faa_drs._base import (
     redirect_request,
     resolve_file_id,
     retry_after,
+    too_many_redirects,
 )
-from faa_drs._exceptions import APIError, DRSConnectionError
+from faa_drs._exceptions import APIError, BadRequestError, DRSConnectionError
 from faa_drs._models import Attachment, Document, Page, SortOrder
 from faa_drs._query import DateLike, Filters, Query, build_query
 
@@ -126,14 +128,17 @@ class DRSClient:
         *,
         offset: int = 0,
         modified_after: DateLike | None = None,
-        sort: SortOrder | str | None = SortOrder.ASC,
+        sort: SortOrder | str | None = SortOrder.DESC,
         filters: Filters | None = None,
         keywords: Iterable[str] | str | None = None,
     ) -> Iterator[Page]:
         """Get all pages, one request per page.
 
-        The default sort is oldest-modified first. With this order, documents that change
-        during the read move to the end and are not skipped. Use `sort=None` for the API
+        The default sort is newest-modified first, and documents with no date come last.
+        Paging uses offsets. With this order, an update to DRS during a long read can
+        repeat a document but does not skip one that did not change. A document that
+        changes during the read can be missed, but it is newer than the first document,
+        so a later read with `modified_after` gets it. Use `sort=None` for the API
         default order.
         """
         query = build_query(
@@ -157,7 +162,7 @@ class DRSClient:
         *,
         offset: int = 0,
         modified_after: DateLike | None = None,
-        sort: SortOrder | str | None = SortOrder.ASC,
+        sort: SortOrder | str | None = SortOrder.DESC,
         filters: Filters | None = None,
         keywords: Iterable[str] | str | None = None,
         limit: int | None = None,
@@ -214,19 +219,17 @@ class DRSClient:
     def download_to(self, source: FileSource, dest: str | os.PathLike[str]) -> Path:
         """Stream a file to disk and return its path.
 
-        If `dest` is a directory, the file name comes from the document or attachment.
-        The write is atomic. A partial file is never left at the destination.
+        If `dest` is an existing directory, or ends with `/`, the file is saved in it. The
+        file name comes from the document or attachment, else from the response. The write
+        is atomic. A partial file is never left at the destination.
         """
         file_id = resolve_file_id(source)
-        dest = Path(dest)
 
         def write(response: httpx.Response) -> Path:
             check_status(response)
-            target = dest / default_file_name(source, response, file_id) if dest.is_dir() else dest
-            target.parent.mkdir(parents=True, exist_ok=True)
-            part = target.with_name(f".{target.name}.part")
+            target, part = download_target(dest, source, response, file_id)
             try:
-                with part.open("wb") as fh:
+                with part.open("xb") as fh:
                     for chunk in response.iter_bytes(_CHUNK):
                         fh.write(chunk)
                 part.replace(target)
@@ -237,7 +240,11 @@ class DRSClient:
         return self._call(self._settings.download_request(file_id), write, stream=True)
 
     def _list(self, query: Query) -> Page:
-        return self._call(self._settings.list_request(query), parse_page)
+        try:
+            return self._call(self._settings.list_request(query), parse_page)
+        except BadRequestError as exc:
+            add_field_hint(exc, query)
+            raise
 
     def _call(
         self,
@@ -278,4 +285,7 @@ class DRSClient:
             response.close()
             request = redirect_request(self._settings, response)
             response = self._client.send(request, stream=stream, follow_redirects=False)
-        return response
+        if not response.has_redirect_location:
+            return response
+        response.close()
+        raise too_many_redirects(response)

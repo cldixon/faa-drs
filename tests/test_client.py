@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
 import httpx
 import pytest
@@ -24,6 +25,7 @@ from faa_drs import (
     RestrictedDocTypeError,
     ServerError,
     UnknownDocTypeError,
+    UnknownFieldWarning,
 )
 from tests.fake_drs import API_KEY, BASE_URL, FakeDRS, make_doc
 
@@ -61,24 +63,63 @@ def test_filters_use_filtered_endpoint(client: DRSClient, fake: FakeDRS) -> None
 
 def test_invalid_query_sends_no_request(client: DRSClient, fake: FakeDRS) -> None:
     with pytest.raises(InvalidQueryError):
-        client.list_documents("SAIB", filters={"drs:nope": "x"})
+        client.list_documents("SAIB", filters={"drs:saibIssueDate": "2020-01-01"})
     assert fake.requests == []
+
+
+def test_field_missing_from_catalog_is_sent_with_a_warning(
+    client: DRSClient, fake: FakeDRS
+) -> None:
+    fake.documents["SAIB"][0]["drs:newField"] = "yes"
+    with pytest.warns(UnknownFieldWarning, match="'drs:newField' is not in the catalog"):
+        page = client.list_documents("SAIB", filters={"drs:newField": "yes"})
+    assert json.loads(fake.requests[-1].content)["documentFilters"] == {"drs:newField": ["yes"]}
+    assert [d["drs:newField"] for d in page.documents] == ["yes"]
+
+
+def test_rejected_unknown_field_is_named_in_the_error(client: DRSClient, fake: FakeDRS) -> None:
+    fake.fail_next(httpx.Response(400, json={"errorMessage": "One or more filters are invalid."}))
+    with (
+        pytest.warns(UnknownFieldWarning, match="Did you mean: drs:saibIssueDate"),
+        pytest.raises(
+            BadRequestError, match="not in the catalog for SAIB: drs:saibIssuDate"
+        ) as info,
+    ):
+        client.list_documents("SAIB", filters={"drs:saibIssuDate": ("2020-01-01", "2020-12-31")})
+    assert "drs:saibIssuDate" in str(info.value.args[0])
+
+
+def test_bad_request_without_unknown_fields_is_unchanged(client: DRSClient, fake: FakeDRS) -> None:
+    fake.fail_next(httpx.Response(400, json={"errorMessage": "One or more filters are invalid."}))
+    with pytest.raises(BadRequestError) as info:
+        client.list_documents("SAIB", filters={"drs:status": "Current"})
+    assert info.value.message == "One or more filters are invalid."
 
 
 def test_iter_pages_walks_all_offsets(client: DRSClient, fake: FakeDRS) -> None:
     pages = list(client.iter_pages("BULK"))
     assert [p.offset for p in pages] == [0, 10, 20]
     assert [r.url.params["offset"] for r in fake.requests] == ["0", "10", "20"]
-    assert all(r.url.params["docLastModifiedDateSortOrder"] == "ASC" for r in fake.requests)
+    assert all(r.url.params["docLastModifiedDateSortOrder"] == "DESC" for r in fake.requests)
 
 
-def test_iter_documents_sorts_oldest_first_by_default(client: DRSClient) -> None:
+def test_iter_documents_sorts_newest_first_by_default(client: DRSClient) -> None:
     docs = list(client.iter_documents("BULK"))
     assert len(docs) == 25
     assert len({d.guid for d in docs}) == 25
     stamps = [d.last_modified for d in docs if d.last_modified]
     assert len(stamps) == 25
-    assert stamps == sorted(stamps)
+    assert stamps == sorted(stamps, reverse=True)
+
+
+def test_desc_puts_documents_without_a_date_last(client: DRSClient, fake: FakeDRS) -> None:
+    fake.documents["MIXED"] = [
+        make_doc(i, modified=None if i % 2 else f"2024-01-0{i + 1}T00:00:00.000Z") for i in range(6)
+    ]
+    fake.page_size = 4
+    dates = [d.last_modified for d in client.iter_documents("MIXED")]
+    assert dates[3:] == [None, None, None]
+    assert all(dates[:3])
 
 
 def test_iter_documents_api_default_order(client: DRSClient, fake: FakeDRS) -> None:
@@ -413,3 +454,122 @@ def test_custom_base_url(fake: FakeDRS) -> None:
         http_client=httpx.Client(transport=fake.transport()),
     ) as drs:
         assert drs.list_documents("X").total == 1
+
+
+def test_too_many_redirects(client: DRSClient, fake: FakeDRS) -> None:
+    loop = httpx.Response(302, headers={"location": f"{BASE_URL}/download/loop"})
+    fake.fail_next(*[loop] * 10)
+    with pytest.raises(APIError, match="redirects") as info:
+        client.download("att-1")
+    assert info.value.status_code == 302
+    assert len(fake.requests) == 6
+
+
+def test_filtered_query_survives_307(client: DRSClient, fake: FakeDRS) -> None:
+    fake.fail_next(httpx.Response(307, headers={"location": f"{BASE_URL}/SAIB/filtered"}))
+    page = client.list_documents("SAIB", filters={"drs:status": "Current"})
+    assert page.documents
+    first, second = fake.requests
+    assert second.method == "POST"
+    assert second.content == first.content
+
+
+@pytest.mark.parametrize("page_size", [1, 7, 10, 24, 25, 750])
+@pytest.mark.parametrize("offset", [0, 3, 24, 25, 40])
+@pytest.mark.parametrize("sort", ["ASC", "DESC", None])
+def test_pagination_returns_each_document_once(
+    fake: FakeDRS, page_size: int, offset: int, sort: str | None
+) -> None:
+    fake.page_size = 750
+    with DRSClient(API_KEY, http_client=httpx.Client(transport=fake.transport())) as drs:
+        everything = [d.guid for d in drs.list_documents("BULK", sort=sort).documents]
+        fake.page_size = page_size
+        fake.requests.clear()
+        guids = [d.guid for d in drs.iter_documents("BULK", offset=offset, sort=sort)]
+    assert len(everything) == 25
+    assert guids == everything[offset:]
+    assert len(fake.requests) == max(1, -(-(25 - offset) // page_size))
+
+
+def test_iter_pages_stops_on_empty_page_that_claims_more(client: DRSClient, fake: FakeDRS) -> None:
+    summary = {
+        "doctypeName": "SAIB",
+        "drsDoctypeName": "SAIB",
+        "count": 0,
+        "hasMoreItems": True,
+        "totalItems": 99,
+        "offset": 0,
+    }
+    fake.fail_next(httpx.Response(200, json={"summary": summary, "documents": []}))
+    assert len(list(client.iter_pages("SAIB"))) == 1
+    assert len(fake.requests) == 1
+
+
+def test_documents_can_be_deduplicated(client: DRSClient) -> None:
+    docs = list(client.iter_documents("BULK")) + list(client.iter_documents("BULK", limit=5))
+    assert len(set(docs)) == 25
+
+
+def test_retry_log_never_contains_api_key(
+    client: DRSClient, fake: FakeDRS, caplog: pytest.LogCaptureFixture
+) -> None:
+    fake.fail_next(httpx.Response(503, text="busy"), _raise(httpx.ConnectError("refused")))
+    with caplog.at_level("WARNING", logger="faa_drs"):
+        client.list_documents("SAIB")
+    assert len(caplog.records) == 2
+    assert all("Retry" in r.getMessage() for r in caplog.records)
+    assert all(API_KEY not in r.getMessage() for r in caplog.records)
+
+
+def test_download_to_new_directory_with_trailing_slash(client: DRSClient, tmp_path: Path) -> None:
+    path = client.download_to("att-1", f"{tmp_path}/new/")
+    assert path == tmp_path / "new" / "GUID.0001.att-1.pdf"
+
+
+def test_download_to_ignores_dot_dot_file_name(
+    client: DRSClient, fake: FakeDRS, tmp_path: Path
+) -> None:
+    fake.fail_next(
+        httpx.Response(200, content=b"x", headers={"content-disposition": 'filename=".."'})
+    )
+    assert client.download_to("att-1", tmp_path) == tmp_path / "att-1"
+    assert sorted(p.name for p in tmp_path.iterdir()) == ["att-1"]
+
+
+def test_download_to_ignores_stale_part_file(client: DRSClient, tmp_path: Path) -> None:
+    (tmp_path / ".out.pdf.part").write_bytes(b"stale")
+    path = client.download_to("att-1", tmp_path / "out.pdf")
+    assert path.read_bytes() == b"%PDF-1.7 attachment"
+
+
+def test_download_rejects_non_string_source(client: DRSClient) -> None:
+    not_a_source: Any = None
+    with pytest.raises(TypeError):
+        client.download(not_a_source)
+
+
+def _crawl_while_updating(sort: str, *, already_read: bool) -> tuple[set[str], set[str]]:
+    """Read 25 documents in pages of 10. After the first page, one document changes."""
+    docs = [make_doc(i, modified=f"2024-01-01T00:00:{i:02d}.000Z") for i in range(25)]
+    fake = FakeDRS(documents={"X": docs}, page_size=10)
+    first_page = docs[:10] if sort == "ASC" else docs[15:]
+    changed = first_page[3] if already_read else docs[12]
+    seen: set[str] = set()
+    with DRSClient(API_KEY, http_client=httpx.Client(transport=fake.transport())) as drs:
+        for page in drs.iter_pages("X", sort=sort):
+            seen.update(d.guid for d in page.documents)
+            changed["docLastModifiedDate"] = "2025-01-01T00:00:00.000Z"
+        newer = {d.guid for d in drs.iter_documents("X", modified_after="2024-01-01T00:00:24Z")}
+    return {d["documentGuid"] for d in docs} - seen, newer
+
+
+def test_asc_read_can_skip_an_unchanged_document_during_an_update() -> None:
+    missed, newer = _crawl_while_updating("ASC", already_read=True)
+    assert len(missed) == 1
+    assert not missed & newer  # The skipped document did not change, so a sync cannot find it.
+
+
+@pytest.mark.parametrize("already_read", [True, False])
+def test_desc_read_plus_incremental_sync_misses_nothing(already_read: bool) -> None:
+    missed, newer = _crawl_while_updating("DESC", already_read=already_read)
+    assert missed <= newer

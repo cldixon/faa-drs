@@ -163,3 +163,45 @@ def test_last_modified_parses_utc(real_docs: dict[str, list[dict]]) -> None:
     d = doc(real_docs, "SAIB")
     assert d.last_modified is not None
     assert d.last_modified.utcoffset() == datetime(2020, 1, 1, tzinfo=UTC).utcoffset()
+
+
+def test_documents_hash_by_identity(real_docs: dict[str, list[dict]]) -> None:
+    a, b = doc(real_docs, "SAIB"), doc(real_docs, "SAIB")
+    assert a == b
+    assert hash(a) == hash(b)
+    assert len({a, b, doc(real_docs, "SAIB", 1)}) == 2
+
+
+def test_document_accepts_field_names() -> None:
+    d = Document.model_validate({"doctype": "AC", "guid": "G", "drs:title": "T"})
+    assert d.guid == "G"
+    assert d.title == "T"
+    assert "guid" not in d.metadata
+    assert Document(doctype="AC", guid="G").metadata == {}
+
+
+@pytest.mark.parametrize(("raw", "expected"), [("asc", SortOrder.ASC), ("NONE", None), (7, None)])
+def test_page_tolerates_unknown_sort_order(raw: Any, expected: SortOrder | None) -> None:
+    page = Page.model_validate(
+        {
+            "summary": {
+                "doctypeName": "X",
+                "drsDoctypeName": "X",
+                "count": 0,
+                "hasMoreItems": False,
+                "totalItems": 0,
+                "offset": 0,
+                "sortByOrder": raw,
+            },
+            "documents": [],
+        }
+    )
+    assert page.sort_order == expected
+
+
+def test_metadata_mapping_access(real_docs: dict[str, list[dict]]) -> None:
+    d = doc(real_docs, "SAIB")
+    with pytest.raises(KeyError):
+        d["drs:missing"]
+    assert "drs:missing" not in d
+    assert d.get("drs:missing") is None

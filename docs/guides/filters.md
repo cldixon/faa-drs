@@ -45,7 +45,7 @@ The API sets these limits:
 - A maximum of 5 filters. `keywords` counts as 1 filter.
 - A maximum of 10 values for each filter.
 
-The client checks these limits. If a query is not valid, the client raises `InvalidQueryError` and does not send a request.
+The client checks these limits. If a query is not valid, the client raises `InvalidQueryError` and does not send a request. The client also checks the type of each value, for example that a date field has a `(start, end)` pair.
 
 ## Find field names
 
@@ -67,11 +67,35 @@ drs:productType ARRAY Product Type
 ...
 ```
 
-If a field name is not correct, the error message shows the nearest names:
+If a field name is not in the catalog, the client gives an `UnknownFieldWarning` that shows the nearest names. The client sends the filter anyway, because DRS can add fields before the catalog has them:
 
 ```text
-InvalidQueryError: 'drs:saibIssuDate' is not a filterable field for document type 'SAIB'.
-Did you mean: drs:saibIssueDate?
+UnknownFieldWarning: 'drs:saibIssuDate' is not in the catalog for document type 'SAIB'.
+The filter is sent anyway. The API rejects fields that it does not know.
+Did you mean: drs:saibIssueDate, drs:saibMake, drs:saibModel?
+```
+
+If the API does not know the field either, it rejects the request. The API message does not name the field, so the client adds the names to the `BadRequestError`:
+
+```text
+BadRequestError: [400] One or more filters provided are invalid or not applicable for the
+requested document type. ... These filter fields are not in the catalog for SAIB: drs:saibIssuDate.
+```
+
+To make the warning an error, for example in tests:
+
+```python
+import warnings
+
+from faa_drs import UnknownFieldWarning
+
+warnings.simplefilter("error", UnknownFieldWarning)
+```
+
+To hide the warning for a field that you know is correct:
+
+```python
+warnings.filterwarnings("ignore", message="'drs:newField'", category=UnknownFieldWarning)
 ```
 
 ## Filter by change date

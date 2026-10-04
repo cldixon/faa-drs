@@ -37,7 +37,7 @@ Download into memory:
 data = drs.download(doc)
 ```
 
-Download to a directory. The client uses the file name from the document:
+Download to a directory. The client uses the file name from the document. If the path ends with `/`, the client makes the directory if it does not exist:
 
 ```python
 path = drs.download_to(doc, "downloads/")

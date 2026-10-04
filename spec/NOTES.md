@@ -132,7 +132,15 @@ Latency is about 1.5–3 s per page; FAR took about 9 s.
   The corrections are in `scripts/generate_catalog.py`.
 - **Paging is stable**: full crawls of SAIB, ORDERS and BULLETINS under ASC, DESC and the default sort each returned exactly
   `totalItems` unique GUIDs.
-- With `docLastModifiedDateSortOrder=ASC`, documents with a null date come first.
+- With `docLastModifiedDateSortOrder=ASC`, documents with a null date come first. With `DESC`, they come last
+  (probed 2026-10-04 on SAIB and BULLETINS, GET and POST: one contiguous block in both cases, and full crawls
+  in both directions returned `totalItems` unique GUIDs).
+- `docLastModifiedDate` values are often shared: SAIB has 102 timestamps shared by 2 to 11 documents. Resuming a
+  crawl from the last seen timestamp with the strict `docLastModifiedDate` filter would skip the rest of a group.
+- The SDK pages with `DESC` by default. Offset paging with `ASC` can skip an unchanged document if a document that
+  was already read changes mid-crawl (it moves to the end and everything after it shifts back one). With `DESC`
+  a change can only repeat a document, and a document missed because it changed is newer than the first document
+  read, so the next incremental sync gets it.
 - `docLastModifiedDate` is **strictly after**, and it **excludes documents with a null date**
   (SAIB with a cutoff of 1900-01-01 returns 753 of 1,338).
 - The `Keyword` filter returns documents that contain *any* of the given terms.

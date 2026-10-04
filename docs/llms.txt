@@ -7,7 +7,8 @@ Key facts:
 - Clients: `DRSClient` (sync) and `AsyncDRSClient` (async). Same methods. Use as context managers.
 - Methods: `list_documents(doctype, offset=, modified_after=, sort=, filters=, keywords=) -> Page`, `iter_pages(...)`, `iter_documents(..., limit=)`, `get_attachments(doc)`, `download(doc_or_attachment) -> bytes`, `download_to(doc_or_attachment, path_or_dir) -> Path`.
 - Document type codes: `DocType` enum (for example `DocType.AC`, `DocType.SAIB`, `DocType.ADFRAWD`, `DocType.FAR`). Plain strings also work.
-- Field names differ per document type. Find them with `faa_drs.catalog.get_doctype(code).fields`.
+- Field names differ per document type. Find them with `faa_drs.catalog.get_doctype(code).fields`. A field missing from the catalog gives `UnknownFieldWarning` and is still sent; the API rejects unknown fields with `BadRequestError`.
+- `iter_documents` and `iter_pages` sort newest change first (`sort="DESC"`) by default. Replace documents by `guid`; a long read can return one twice.
 - Filters: `{"drs:status": ["Current"], "<date field>": (start, end)}`. Max 5 filters (keywords count as one), max 10 values each.
 - `Document` attributes: `guid`, `doctype`, `number`, `title`, `status`, `last_modified`, `url`, `download_url`, `file_name`, `has_attachments`, `content`, `metadata`.
 - `doc.content` has inline full text for ADFRAWD, ADNPRM, CFRFRSFAR, FAR, NPRM, SCFINAL, SCPROPOSED, SFAR. Other types publish text as files (usually PDF). The SDK does not parse PDFs.
